@@ -42,6 +42,7 @@ body {
 
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 a {
@@ -50,6 +51,8 @@ a {
 
 ul, nav {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -88,8 +91,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .pink {
-  background-color: #ed0f4b;
   color: #ed0f4b;
+}
+
+.pink-bg {
+  background-color: #ed0f4b;
 }
 
 .turquoise {
@@ -168,6 +174,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .yellow {
   color: #ffcb00;-
+}
+
+.royal_blue {
+  color: #5f4eee;
+}
+
+.tuna {
+  color: #3b3d47;
 }
 
 .white {
@@ -813,7 +827,7 @@ Platforms Section
   position: relative;
 }
 
-#platforms .platforms-container, #init .init-container, #testimonials .testimonials-container {
+#platforms .platforms-container, #init .init-container, #testimonials .testimonials-container, #awards .awards-container {
   display: flex;
   flex-wrap: wrap;
 }
@@ -1113,7 +1127,6 @@ Clients Section
   position: relative;
   background: #ffffff;
   margin: 3% 10%;
-  padding: 30px;
   border: 1px solid #dddbcf;
 }
 
@@ -1129,17 +1142,43 @@ Clients Section
   left: 15%;
 }
 
-#clients .clients-container .box:nth-child(5) {
-  left: 25%;
+#clients .client-btn {
+  margin: 150px 0 0;
 }
 
 #clients .btn a {
-  width: 20%;
+  position: relative;
   margin: 0 auto;
 }
 
-#clients .btn a {
-  padding: 15px 0;
+#clients .btn-bottom a {
+  width: 461px;
+  padding: 35.5px;
+  text-align: left;
+  border: 1px solid #ffa938;
+}
+
+#clients .btn-top {
+  position: relative;
+  top: -38px;
+  left: -20px;
+}
+
+#clients .btn-top a {
+  width: 338px;
+  background: #ffffff;
+  padding: 18px;
+}
+
+#clients .btn-top a:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 100%;
+  height: 100%;
+  background: url(../img/dots_pattern_grey.png) repeat;
+  z-index: -1;
 }
 
 @media (max-width: 1024px) {
@@ -1154,9 +1193,6 @@ Clients Section
   }
   #clients .clients-container .box:nth-child(4) {
     left: 3%;
-  }
-  #clients .clients-container .box:nth-child(5) {
-    left: 9%;
   }
 }
 
@@ -1186,5 +1222,236 @@ Clients Section
   #clients .clients-container .box .box-img:nth-child(even) {
     margin: 3% 0;
     margin-right: auto;
+  }
+}
+
+
+/*==========================
+Awards Section
+==========================*/
+#awards {
+  padding: 50px 0;
+  position: relative;
+}
+
+#awards .section-title {
+  text-align: right;
+  right: 10%;
+}
+
+#awards .section-title:before {
+  top: 100%;
+  right: -8%;
+  width: 43%;
+  background: #ffa938;
+}
+
+#awards .section-title:after {
+  content: "";
+  position: absolute;
+  top: 18%;
+  right: -22.5%;
+  width: 40%;
+  height: 200%;
+  background: url(../img/dots_pattern_grey.png) repeat;
+  z-index: -1;
+}
+
+#awards .awards-container .box {
+  flex: 1 1 auto;
+  margin: 3% 0;
+}
+
+#awards .awards-container .box .box-content {
+  width: 240px;
+  margin: 0 auto;
+}
+
+#awards .awards-container .box .box-img {
+  background: #ffffff;
+  border: 1px solid #dddbcf;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  #awards .awards-container .box .box-content {
+    margin: 1%;
+  }
+}
+
+/*==========================
+Footer
+==========================*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  color: #fff;
+  background-color: #0098d9;
+}
+
+footer .footer-heading {
+  font-size: 40px;
+  line-height: 0.9;
+}
+
+footer .footer-left {
+  flex: 60%;
+  border-right: 1px solid #17d7e8;
+  display: flex;
+  padding-left: 80px;
+}
+
+footer .footer-left .footer-col {
+  flex: 1 1 0;
+  padding: 60px 0;
+}
+
+footer .footer-left li {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+footer .footer-left .title {
+  font-size: 40px;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+
+footer .footer-left .footer-links .title {
+  margin-bottom: 30px;
+}
+
+footer .footer-left .social-media-links li {
+  display: inline-block;
+  margin: 10px;
+}
+
+footer .footer-left .social-media-links li:first-child {
+  margin-left: 0;
+}
+
+footer .footer-right {
+  flex: 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+footer .footer-right .footer-row:nth-child(2) {
+  flex: 1;
+  text-align: center;
+}
+
+footer .footer-right .footer-row:nth-child(2) > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 50px;
+  padding: 15px 0;
+}
+
+footer .footer-right .footer-row:nth-child(2) > div:last-child {
+  margin: 0;
+}
+
+footer .footer-right .form {
+  position: relative;
+  max-width: 600px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 60px auto 0;
+}
+
+footer .footer-right form {
+  margin-top: 25px;
+}
+
+footer .field-wrap {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .field-wrap .field {
+  flex: 1 1 0;
+  margin: 1.5% 2.5% 1% 0;
+}
+
+footer .field-wrap .field:last-child {
+  margin-right: 0;
+}
+
+footer .field input, textarea {
+  font-family: 'BebasNeue';
+  width: 100%;
+  height: 100%;
+  padding: 11px 10px;
+  background: #26a7df;
+  border: 1px solid #b5e8f6;
+  outline: none;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+footer .field textarea {
+  min-height: 150px;
+}
+
+/*::-webkit-resizer {
+  background-color: #ffffff;
+}*/
+
+footer .field ::placeholder {
+  color: #b5e8f6;
+  text-transform: uppercase;
+}
+
+footer .field input:focus , textarea:focus {
+  border: 1px solid #ffffff;
+}
+
+footer .form .btn-submit {
+  font-family: 'BebasNeue';
+  display: inline-block;
+  float: right;
+  width: 200px;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 50px;
+  padding: 2px 0;
+  background: transparent;
+  border: 1px solid #000000;
+}
+
+footer .form button span {
+  background-color: transparent;
+}
+
+footer .footer-right .contact-details p {
+  font-size: 26px;
+}
+
+@media (max-width: 1200px) {
+  footer .footer-right .footer-row:nth-child(2) > div {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer .footer-left .footer-col:first-child {
+    display: none;
+  }
+  footer .footer-left, footer .footer-right {
+    flex: 50%
+  }
+}
+
+@media (max-width: 900px) {
+  footer .footer-left, footer .footer-right {
+    flex: 100%;
+    justify-content: center;
   }
 }
