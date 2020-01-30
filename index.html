@@ -10,7 +10,6 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
-
 </head>
 <body>
 	
@@ -30,11 +29,20 @@
 		</div>
 		<div class="nav-container">
 			<nav>
-				<li><a href="#">Customized Serious Games</a></li>
-				<li><a href="#">Virtual Reality-Based Training</a></li>
-				<li><a href="#">Augmented Reality-Based Training</a></li>
-				<li><a href="#">Success Stories</a></li>
-				<li><a href="#">Blog</a></li>
+				<ul>
+					<li class="dropdown">
+						<a href="#" class="toggle">Customized Serious Games</a>
+						<!-- <ul>
+	                        <li><a href="#">Themes and stuff</a></li>
+	                        <li><a href="#">Plugins</a></li>
+	                        <li><a href="#">Tutorials</a></li>
+	                    </ul>  -->
+					</li>
+					<li><a href="#">Virtual Reality-Based Training</a></li>
+					<li><a href="#">Augmented Reality-Based Training</a></li>
+					<li><a href="#">Success Stories</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
 	  		</nav>
 		</div>
 	</header>
@@ -43,11 +51,11 @@
 	  Hero Section
 	============================-->
 	<section id="hero">	
-		<div class="slider">
+		<div class="slider-hero">
 			<div class="slide">
 				<div class="bg-layer1 bg-blue"></div>						
 				<div class="slide-container">
-					<img src="img/banner_home_01.png">
+					<img src="img/banner_home_01.png" alt="game-based-training">
 					<div class="slide-content main">
 						<div class="left">
 							<h2>Immersive</h2>
@@ -78,7 +86,7 @@
 			<div class="slide">
 				<div class="bg-layer1 bg-green"></div>						
 				<div class="slide-container">
-					<img src="img/banner_home_02.png">
+					<img src="img/banner_home_02.png" alt="game-based-training">
 					<div class="slide-content ">
 						<div class="text-right">
 							<h2>The Hottest New trend:</h2>
@@ -95,7 +103,7 @@
 			 <div class="slide">
 				<div class="bg-layer1 bg-orange"></div>						
 				<div class="slide-container">
-					<img src="img/banner_home_03.png">
+					<img src="img/banner_home_03.png" alt="game-based-training">
 					<div class="slide-content ">
 						<div class="text-right">
 							<h2 class="white text_shadow">The Hottest New trend:</h2>
@@ -112,7 +120,7 @@
 			<div class="slide">
 				<div class="bg-layer1 bg-green"></div>						
 				<div class="slide-container">
-					<img src="img/banner_home_04.png">
+					<img src="img/banner_home_04.png" alt="game-based-training">
 					<div class="slide-content main">
 						<div class="left">
 							<h2 class="indigo">Is Game Based learning</h2>
@@ -129,7 +137,7 @@
 			<div class="slide">
 				<div class="bg-layer1 bg-orange"></div>						
 				<div class="slide-container">
-					<img src="img/banner_home_05.png">
+					<img src="img/banner_home_05.png" alt="game-based-training">
 					<div class="slide-content ">
 						<div class="text-right">
 							<h2 class="indigo">Match The</h2>
@@ -146,7 +154,7 @@
 		</div>
 		<div class="container">
 			<div class="button-center">
-				<a href="#industry" >Scroll To Explore <img src="img/scroll.png"> </a>
+				<a href="#industry" >Scroll To Explore <img src="img/scroll.png" alt="scroll-down"> </a>
 			</div>
 			<div class="button-right">
 				<a href="#industry" class="atlantis-bg gray">Contact <span class="white">Us</span></a>
@@ -157,14 +165,14 @@
 	<!--==========================
 	  Industry Section
 	============================-->
-	<!-- <section id="industry">
+	<section id="industry">
 		<div class="main-container">
 			<div class="section-header">
 				<h2 class="section-title">Customized Solutions For <span class="orange">Your Industry</span></h2>
 				<p class="section-description gray">We work across sectors for both, public and private organizations. Our innovative and versatile training are customized for varying needs of different industries and have won the trust of our clients.</p>
 			</div>
 			<div class="seperator">
-        		<img src="img/seperator_01.png">
+        		<img src="img/seperator_01.png" alt="seperator">
         	</div>
 		</div>
         <div class="industries-container">
@@ -173,7 +181,7 @@
 	        		<div class="box-content">
 	        			<h3 class="box-title gray"> Healthcare</h3>
 		        		<div class="box-img">
-		        			<img src="img/industries_healthcare.png">
+		        			<img src="img/industries_healthcare.png" alt="healthcare industry">
 		        		</div>
 		        		<div class="btn">
 		        			<a href="#" class="gray">Know <span class="orange">More</span></a>        			
@@ -184,7 +192,7 @@
 	        		<div class="box-content">
 	        			<h3 class="box-title gray"> Banking, Financial Services, and Insurance</h3>
 		        		<div class="box-img">
-		        			<img src="img/industries_BFSI.png">
+		        			<img src="img/industries_BFSI.png" alt="BFSI industry">
 		        		</div>
 		        		<div class="btn">
 		        			<a href="#" class="gray">Know <span class="blue">More</span></a>        			
@@ -195,7 +203,7 @@
 	        		<div class="box-content">
 	        			<h3 class="box-title gray"> IT / ITeS And Business Consulting</h3>
 		        		<div class="box-img">
-		        			<img src="img/industries_IT.png">
+		        			<img src="img/industries_IT.png" alt="IT industry">
 		        		</div>
 		        		<div class="btn">
 		        			<a href="#" class="gray">Know <span class="atlantis">More</span></a>        			
@@ -206,7 +214,7 @@
 	        		<div class="box-content">
 	        			<h3 class="box-title gray"> Manufacturing</h3>
 		        		<div class="box-img">
-		        			<img src="img/industries_MFG.png">
+		        			<img src="img/industries_MFG.png" alt="MFG industry">
 		        		</div>
 		        		<div class="btn">
 		        			<a href="#" class="gray">Know <span class="puerto_rico">More</span></a>        			
@@ -221,7 +229,7 @@
 	        		<div class="box-content">
 	        			<h3 class="box-title gray"> Branding Games</h3>
 		        		<div class="box-img">
-		        			<img src="img/industries_branding_games.png">
+		        			<img src="img/industries_branding_games.png" alt="branding games">
 		        		</div>
 		        		<div class="btn">
 		        			<a href="#" class="gray">Know <span class="purple">More</span></a>        			
@@ -232,7 +240,7 @@
 	        		<div class="box-content">
 	        			<h3 class="box-title gray"> Retail</h3>
 		        		<div class="box-img">
-		        			<img src="img/industries_retail.png">
+		        			<img src="img/industries_retail.png" alt="retail">
 		        		</div>
 		        		<div class="btn">
 		        			<a href="#" class="gray">Know <span class="orange">More</span></a>        			
@@ -242,13 +250,13 @@
 	        </div>	        
         </div>
         <div class="seperator2">
-    		<img src="img/seperator_02.png">    		
+    		<img src="img/seperator_02.png" alt="seperator">    		
         </div>
         <div class="seperator3">
-			<img src="img/seperator_03.png">    		
+			<img src="img/seperator_03.png" alt="seperator">    		
     	</div>
         <div class="seperator4">
-    		<img src="img/seperator_04.png">    		
+    		<img src="img/seperator_04.png" alt="seperator">    		
         </div>
         <div class="industry-text">
         	<div class="section-header">
@@ -256,19 +264,19 @@
 				<h2 class="section-title">Level Up your<br> training with our <span class="cerulean">Industry <br>Experts</span></h2>				
 			</div>
         </div>
-	</section> -->
+	</section>
 
 	<!--==========================
 	  Platforms Section
 	============================-->
-	<!-- <section id="platforms">
+	<section id="platforms">
 		<div class="main-container">
 			<div class="platforms-container">
 				<div class="platforms-inner section-header">
 					<h2 class="section-title"><span class="shamrock">Platforms</span></h2>
 					<p class="section-description gray">Increasing learner engagement and training completion rates just got easier with ease of access to the learning across all smart devices. You choose the platform that works the best for your employees, and we deliver the awesome results!</p>
 					<div class="section-image">
-						<img src="img/platforms_01.png">						
+						<img src="img/platforms_01.png" alt="platforms">						
 					</div>
 					<p class="section-description gray">Increasing learner engagement and training completion rates just got easier with ease of access to the learning across all smart devices. You choose the platform that works the best for your employees, and we deliver the awesome results!</p>
 				</div>			
@@ -280,57 +288,57 @@
 		        				<a href="#" class="gray">Know <span class="atlantis">More</span></a>        			
 		        			</div>
 		        			<div class="learning-icon">
-	        					<img src="img/icon_computer_based_learning.png">
+	        					<img src="img/icon_computer_based_learning.png" alt="computer based learning">
 	        				</div>		    
 		        		</div>	        			    							        						
 		        		<div class="learning-type">							
 							<div class="btn">
-								<h3 class="gray">Computer Based <br> Learning</h3>
+								<h3 class="gray">Mobile Based <br> Learning</h3>
 		        				<a href="#" class="gray">Know <span class="purple">More</span></a>        			
 		        			</div>
 		        			<div class="learning-icon">
-	        					<img src="img/icon_mobile_based_learning.png">
+	        					<img src="img/icon_mobile_based_learning.png" alt="mobile based learning">
 	        				</div>		    
 		        		</div>	        			    							        						
 		        		<div class="learning-type">							
 							<div class="btn">
-								<h3 class="gray">Computer Based <br> Learning</h3>
+								<h3 class="gray">Virtual reality Based <br> Learning</h3>
 		        				<a href="#" class="gray">Know <span class="picton">More</span></a>        			
 		        			</div>
 		        			<div class="learning-icon">
-	        					<img src="img/icon_VR.png">
+	        					<img src="img/icon_VR.png" alt="Virtual reality based learning">
 	        				</div>		    
 		        		</div>	        			    							        						
 		        		<div class="learning-type">							
 							<div class="btn">
-								<h3 class="gray">Computer Based <br> Learning</h3>
+								<h3 class="gray">Augmented reality Based <br> Learning</h3>
 		        				<a href="#" class="gray">Know <span class="carrot">More</span></a>        			
 		        			</div>
 		        			<div class="learning-icon">
-	        					<img src="img/icon_AR.png">
+	        					<img src="img/icon_AR.png" alt="Augmented reality based learning">
 	        				</div>		    
 		        		</div>	        			    							        						
 					</div>
 				</div>
 			</div>
 			<div class="seperator">
-        		<img src="img/seperator_05.png">
+        		<img src="img/seperator_05.png" alt="seperator">
         	</div>			
 		</div>
-	</section> -->
+	</section>
 
 	<!--==========================
 	  Platforms Section
 	============================-->
-	<!-- <section id="init">
+	<section id="init">
 		<div class="main-container">
 			<div class="init-container">
 				<div class="init-inner init-video">					
-					<img src="img/video.png">	
+					<img src="img/video.png" alt="video">	
 					<div class="video-popup">
 						<a class="play-video video-play-button animate" href="https://www.youtube.com/watch?v=KUln2DXU5VE" data-animate="zoomIn"
 						 data-duration="1.5s" data-delay="0.1s">
-							<span><img src="img/video_play.png"></span>
+							<span><img src="img/video_play.png" alt="video play"></span>
 						</a>
 					</div>
 				</div>
@@ -354,7 +362,7 @@
 				<div class="box">
 					<div class="box-content">
 						<h3 class="gray">Formative & Summative</h3>
-						<img src="img/icon_formative_summative_assesments.png" alt="LMS">
+						<img src="img/icon_formative_summative_assesments.png" alt="Formative summative assessments">
 						<h2 class="box-item pink-bg"><span class="white">Assessments</span></h2>
 						<p class="gray section-description">Our games come with in-game assessments and pre and post training quizzes.</p>	
 					</div> 
@@ -362,7 +370,7 @@
 				<div class="box">
 					<div class="box-content">
 						<h3 class="gray">Performance</h3>
-						<img src="img/icon_performance_insight.png" alt="LMS">
+						<img src="img/icon_performance_insight.png" alt="Performance insight">
 						<h2 class="box-item cerulean-bg"><span class="white">Insights</span></h2>
 						<p class="gray section-description">Indusgeeks develops serious games that can be deployed as scorm packages or xapi on your lms.</p>	
 					</div> 
@@ -370,7 +378,7 @@
 				<div class="box">
 					<div class="box-content">
 						<h3 class="gray">Intuitive</h3>
-						<img src="img/icon_intutive_UI.png" alt="LMS">
+						<img src="img/icon_intutive_UI.png" alt="Intuitive UI">
 						<h2 class="box-item picton-bg"><span class="white">UI</span></h2>
 						<p class="gray section-description">Indusgeeks develops serious games that can be deployed as scorm packages or xapi on your lms.</p>	
 					</div> 
@@ -378,7 +386,7 @@
 				<div class="box">
 					<div class="box-content">
 						<h3 class="gray">Multi-Device</h3>
-						<img src="img/icon_multi_device_support.png" alt="LMS">
+						<img src="img/icon_multi_device_support.png" alt="multi device support">
 						<h2 class="box-item orange-bg"><span class="white">Support</span></h2>
 						<p class="gray section-description">Indusgeeks develops serious games that can be deployed as scorm packages or xapi on your lms.</p>	
 					</div> 
@@ -386,19 +394,19 @@
 				<div class="box">
 					<div class="box-content">
 						<h3 class="gray">Online & Offline</h3>
-						<img src="img/icon_offline_online_support.png" alt="LMS">
+						<img src="img/icon_offline_online_support.png" alt="offline online support">
 						<h2 class="box-item shamrock-bg"><span class="white">Solutions</span></h2>
 						<p class="gray section-description">Indusgeeks develops serious games that can be deployed as scorm packages or xapi on your lms.</p>	
 					</div> 
 				</div>
 			</div>			
 		</div>
-	</section> -->
+	</section>
 
 	<!--==========================
 	  Testimonial Section
 	============================-->
-	<!-- <section id="testimonials">
+	<section id="testimonials">
 		<div class="main-container">
 			<div class="testimonials-container">
 				<div class="testimonials-inner section-header">
@@ -406,18 +414,55 @@
 					<p class="section-description gray">At Indusgeeks, our priority is to provide amazing solutions to meet our customer needs! and that has won several od our clients as advocates.</p>					
 				</div>			
 				<div class="testimonials-inner">					
+					<div class="client-testimonials">
+						<div class="slider-testimonials">
+							<div class="slide">
+								<div class="slide-container">
+									<div class="slide-img">
+										<img src="img/testimonial_client_01.png" alt="client testimonial">
+									</div>
+									<div class="slide-content">
+										<div class="slide-text atlantis-bg">
+											<p class="section-description white">The dedication, the ability to go above and beyond for their clients and their extraordinary ability to understand complex medical knowledge in a short timespan are just a few reasons why the indusgeeks team is one of the best out there and a great pleasure to work with!</p>											
+										</div>
+										<div class="client-details">
+											<h3 class="gray">Parvati Dev, PH.D.</h3>
+											<p>President and CEO, innovation learning, INC.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-container">
+									<div class="slide-img">
+										<img src="img/testimonial_client_01.png" alt="client testimonial">
+									</div>
+									<div class="slide-content">
+										<div class="slide-text purple-bg">
+											<p class="section-description white">The dedication, the ability to go above and beyond for their clients and their extraordinary ability to understand complex medical knowledge in a short timespan are just a few reasons why the indusgeeks team is one of the best out there and a great pleasure to work with!</p>											
+										</div>
+										<div class="client-details">
+											<h3 class="gray">Parvati Dev, PH.D.</h3>
+											<p>President and CEO, innovation learning, INC.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="slider-controls">
+							<button class="prev"><img src="img/backward.png" alt="backward"></button>
+							<button class="next"><img src="img/forward.png" alt="forward"></button>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div class="seperator">
-        		<img src="img/seperator_05.png">
-        	</div>			
 		</div>
-	</section> -->
+	</section>
 
 	<!--==========================
 	  Clients Section
 	============================-->
-	<!-- <section id="clients">
+	<section id="clients">
 		<div class="main-container">
 			<div class="section-header">
 				<h2 class="section-title">Some of our<span class="puerto_rico">Clients</span></h2>							
@@ -426,34 +471,34 @@
 		<div class="clients-container"> 
 				<div class="box">
 					<div class="box-img">
-						<img src="img/logo_ASA.png">
+						<img src="img/logo_ASA.png" alt="American Society of Anesthesiologists logo">
 					</div>					
 					<div class="box-img">
-						<img src="img/logo_Infosys.png">
-					</div>					
-				</div>
-				<div class="box">
-					<div class="box-img">
-						<img src="img/logo_Microsoft.png">
-					</div>					
-					<div class="box-img">
-						<img src="img/logo_Cognizant.png">
+						<img src="img/logo_Infosys.png" alt="Infosys logo">
 					</div>					
 				</div>
 				<div class="box">
 					<div class="box-img">
-						<img src="img/logo_Essar.png">
+						<img src="img/logo_Microsoft.png" alt="Microsoft logo">
 					</div>					
 					<div class="box-img">
-						<img src="img/logo_QA.png">
+						<img src="img/logo_Cognizant.png" alt="Cognizant logo">
 					</div>					
 				</div>
 				<div class="box">
 					<div class="box-img">
-						<img src="img/logo_Univesity of Memphis.png">
+						<img src="img/logo_Essar.png" alt="Essar logo">
 					</div>					
 					<div class="box-img">
-						<img src="img/logo_CAE.png">
+						<img src="img/logo_QA.png" alt="QA logo">
+					</div>					
+				</div>
+				<div class="box">
+					<div class="box-img">
+						<img src="img/logo_Univesity_of_Memphis.png" alt="University of Memphis logo">
+					</div>					
+					<div class="box-img">
+						<img src="img/logo_CAE.png" alt="CAE logo">
 					</div>					
 				</div>
 			</div>
@@ -465,7 +510,7 @@
 					<a href="#" class="gray">View <span class="atlantis">Success Stories</span></a>        			
 				</div>
 			</div>
-	</section> -->
+	</section>
 
 	<!--==========================
 	  Awards Section
@@ -479,7 +524,7 @@
 				<div class="box">
 					<div class="box-content">
 						<div class="box-img">
-							<img src="img/logo_brandon_hall.png">
+							<img src="img/logo_brandon_hall.png" alt="Brandon Hall logo">
 						</div>					
 						<div class="box-text">
 							<p class="section-description">Brandon Hall Gold Award Winner - *Best use of training games and simulations*</p>
@@ -489,7 +534,7 @@
 				<div class="box">
 					<div class="box-content">
 						<div class="box-img">
-							<img src="img/logo_Unity.png">
+							<img src="img/logo_Unity.png" alt="Unity logo">
 						</div>					
 						<div class="box-text">
 							<p class="section-description">Clinispace - jointly created by indusgeeks and innovation in learning, inc. (US) was nominated for the best serious game category at the unity awards.</p>
@@ -499,7 +544,7 @@
 				<div class="box">
 					<div class="box-content">
 						<div class="box-img">
-							<img src="img/logo_Proto.png">
+							<img src="img/logo_Proto.png" alt="Proto logo">
 						</div>					
 						<div class="box-text">
 							<p class="section-description">Indusgeeks was selected as one of the 15 hottest product startups in India by proto.in (2010)</p>
@@ -542,11 +587,11 @@
 					<li class="gold title">Connect</li>
 				</ul>
 				<ul class="social-media-links">
-					<li><a href="#"><img src="img/icon_Facebook.png"></a></li>
-					<li><a href="#"><img src="img/icon_Instagram.png"></a></li>
-					<li><a href="#"><img src="img/icon_Twitter.png"></a></li>
-					<li><a href="#"><img src="img/icon_LinkedIn.png"></a></li>
-					<li><a href="#"><img src="img/icon_Youtube.png"></a></li>
+					<li><a href="#"><img src="img/icon_Facebook.png" alt="Facebook"></a></li>
+					<li><a href="#"><img src="img/icon_Instagram.png" alt="Instagram"></a></li>
+					<li><a href="#"><img src="img/icon_Twitter.png" alt="Twitter"></a></li>
+					<li><a href="#"><img src="img/icon_LinkedIn.png" alt="Linkedin"></a></li>
+					<li><a href="#"><img src="img/icon_Youtube.png" alt="Youtube"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -587,8 +632,8 @@
 
 	<!-- JavaScript Libraries -->
 	<script src="lib/jquery/jquery.min.js"></script>
-	<script type="text/javascript" src="lib/slick/slick.min.js"></script>
-	<script  src="js/script.js"></script>
+	<script src="lib/slick/slick.min.js"></script>
+	<script src="js/script.js"></script>
 
 </body>
 </html>

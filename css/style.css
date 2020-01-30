@@ -51,6 +51,7 @@ a {
 
 ul, nav {
   list-style: none;
+  display: inherit;
   margin: 0;
   padding: 0;
 }
@@ -173,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .yellow {
-  color: #ffcb00;-
+  color: #ffcb00;
 }
 
 .royal_blue {
@@ -229,12 +230,12 @@ header nav {
   padding-right: 30px;
 }
 
-header nav li {
+header nav ul li {
   margin: 0 15px;
   padding-bottom: 10px;
 }
 
-header nav li a {
+header nav ul li a {
   color: #666565;
   text-transform: uppercase;
   font-size: 20px;
@@ -267,11 +268,15 @@ header > #nav-check {
     height: 0px;
     overflow: hidden;
     display: block;
+    background: #ffffff;
   }
   header .nav-container nav {
     flex-direction: column; 
   }
-  header nav > li {
+  header .nav-container nav ul {
+    display: block;
+  }
+  header nav ul > li {
     width: 100%;
     padding: 20px;
     border-bottom: 1px solid #e8e8e8;
@@ -331,7 +336,7 @@ Sections
 Hero
 ==========================*/
 
-#hero .slider {
+#hero .slider-hero {
   width: 85%;
   margin: 0 auto;
   padding-top: 50px;
@@ -342,7 +347,7 @@ Hero
   right: -10px;
   width: 30%;
   height: 100%;
-  opacity: 90%;
+  opacity: 0.9;
   z-index: -1;
 }
 
@@ -364,7 +369,7 @@ Hero
   left: 5px;
   width: 95%;
   height: 80%;
-  opacity: 85%;
+  opacity: 0.85;
   z-index: 0;
 }
 
@@ -564,7 +569,7 @@ Hero
 
 
 @media (max-width: 1200px) {
-  #hero .slider {
+  #hero .slider-hero {
     width: 98%;
   }
 }
@@ -594,7 +599,7 @@ Hero
 }
 
 @media (max-width: 768px) {
-  #hero .slider {
+  #hero .slider-hero {
     width: 100%;
   }
   #hero .slide .bg-layer1, #hero .slide .bg-layer2 {
@@ -612,6 +617,7 @@ Hero
   #hero .container .button-right {
     width: 150px;
   }
+}
 
 @media (max-width: 642px) {
   #hero .slide .slide-container .text-right {
@@ -626,7 +632,6 @@ Hero
   #hero .container .button-right {
     bottom: 0;
   }
-}
 }
 
 /*==========================
@@ -832,7 +837,7 @@ Platforms Section
   flex-wrap: wrap;
 }
 
-#platforms .platforms-container .platforms-inner, #init .init-container .init-inner, #testimonials .testimonials-container .testimonials-inner {
+#platforms .platforms-container .platforms-inner, #init .init-container .init-inner {
   position: relative;
   flex: 1 1 48%;
   margin: 1%;
@@ -930,7 +935,7 @@ Platforms Section
     flex-direction: column;
     margin: 3%;
   }
-  #platforms .platforms-content .learning-type .btn, #init .init-container .init-video {
+  #platforms .platforms-content .learning-type .btn {
     order: 2;
     margin: 0;
   }
@@ -959,6 +964,10 @@ Init Section
   position: relative;
 }
 
+#init .init-container {
+  align-items: center;
+}
+
 #init .video-popup {
   display: inline-block;
   position: absolute;
@@ -969,7 +978,7 @@ Init Section
 #init .section-title:before {
   top: 100%;
   width: 100%;
-  left: -16.5%;
+  left: 0;
   background: #0098d9;
 }
 
@@ -1046,6 +1055,14 @@ Init Section
   }
 }
 
+@media (max-width: 1024px) {
+  #init .init-container .init-video {
+    order: 2;
+    margin: 0;
+    flex: 51%;
+  }
+}
+
 @media (max-width: 900px) {
   #init .init-container .section-header {
     margin-left: 35%;
@@ -1054,14 +1071,29 @@ Init Section
     width: 120%;
     height: 145%;
   }
+  #init .section-title:before {
+    width: 140%;
+    left: -25%;
+  }
+}
+
+@media (max-width: 600px) {
+  #init .section-title:before {
+    width: 125%;
+    left: -10%;
+  }
 }
 
 /*==========================
 Testimonials Section
 ==========================*/
 #testimonials {
-  padding: 50px 0;
+  padding: 80px 0;
   position: relative;
+}
+
+#testimonials .testimonials-container .section-header {
+  flex: 30%;
 }
 
 #testimonials .section-title:before {
@@ -1071,7 +1103,7 @@ Testimonials Section
   background: #72d431;
 }
 
-#testimonials .section-description {
+#testimonials .section-header .section-description {
   width: 55%;
 }
 
@@ -1081,6 +1113,135 @@ Testimonials Section
   width: 150%;
   height: 100%;
 }
+
+#testimonials .testimonials-container .testimonials-inner:nth-child(2) {
+  flex: 70%;
+  margin-top: 10%;
+}
+
+#testimonials .testimonials-container .client-testimonials {
+  position: relative;
+  width: 750px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#testimonials .testimonials-container .slider-testimonials {
+  width: 100%;
+  padding-top: 50px;
+}
+
+#testimonials .slide-container {
+  display: flex;
+  align-items: center;
+}
+
+#testimonials .slide-container .slide-img {
+  position: relative;
+  flex: 20%;
+}
+
+#testimonials .slide-container .slide-content {
+  position: relative;
+  flex: 75%;
+  margin-left: 5%;
+}
+
+#testimonials .slide-container .slide-content .slide-text {
+  position: relative;
+  padding: 3% 3% 8% 3.5%;
+  overflow: hidden;
+}
+
+#testimonials .slide-container .slide-text:before {
+  content: "";
+  position: absolute;
+  bottom: -5%;
+  right: -1%;
+  width: 103px;
+  height: 161px;
+  background: url(../img/testimonial_panel.png) no-repeat;
+}
+
+#testimonials .slide-container .slide-content p {
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+#testimonials .slide-container .slide-content p:before {
+  background: none;
+}
+
+#testimonials .slide-container .slide-content .client-details {
+  margin-top: 20px;
+}
+
+#testimonials .slide-container .slide-content .client-details h3 {
+  font-size: 25px;
+}
+
+#testimonials .slide-container .slide-content .client-details p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #b8ac9c;
+  letter-spacing: 1px;
+}
+
+#testimonials  .slider-controls {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+#testimonials .slider-controls .prev, #testimonials .slider-controls .next {
+  background: #ffffff;
+  padding: 0;
+  outline: 0;
+  border: none;
+}
+
+#testimonials .slider-controls .next {
+  margin-left: 15px;
+}
+
+@media (max-width: 1366px) {
+  #testimonials .testimonials-container .section-header {
+    flex: 35%;
+  }
+  #testimonials .testimonials-container .testimonials-inner:nth-child(2) {
+  flex: 65%;
+  }
+  #testimonials .testimonials-container .client-testimonials {
+    width: 600px;
+  }
+}
+
+@media (max-width: 768px) {
+  #testimonials .slide-container  {
+    flex-direction: column;
+  }
+  #testimonials .slide-container .slide-content {
+    margin: 0;
+    top: -40px;
+    z-index: -1;
+  }
+  #testimonials .slide-container .slide-content .slide-text {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #testimonials .testimonials-container .client-testimonials {
+    width: 460px;
+  }
+}
+
+@media (max-width: 600px) {
+  #testimonials .testimonials-container .client-testimonials {
+    width: 360px;
+  }
+}
+
 
 /*==========================
 Clients Section
@@ -1414,7 +1575,6 @@ footer .field input:focus , textarea:focus {
 
 footer .form .btn-submit {
   font-family: 'BebasNeue';
-  display: inline-block;
   float: right;
   width: 200px;
   font-size: 30px;
