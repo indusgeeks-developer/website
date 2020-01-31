@@ -1414,7 +1414,7 @@ Clients Section
 }
 
 .clients .btn-bottom a {
-  width: 90%;
+  width: 461px;
   padding: 35.5px;
   text-align: left;
   border: 1px solid #ffa938;
@@ -1427,7 +1427,7 @@ Clients Section
 }
 
 .clients .btn-top a {
-  width: 70%;
+  width: 338px;
   background: #ffffff;
   padding: 18px;
 }
@@ -1484,6 +1484,12 @@ Clients Section
   .clients .box .box-img:nth-child(even) {
     margin: 3% 0;
     margin-right: auto;
+  }
+  .clients .btn-bottom a {
+    width: 90%;
+  }
+  .clients .btn-top a {
+    width: 70%;
   }
 }
 
@@ -1741,5 +1747,20 @@ footer .copyright ul li a {
   footer .copyright ul li {
     font-size: 18px;
     margin: 0 8px;
+  }
+}
+
+@media (max-width: 468px) {
+  .section-title:before, .section-title:after {
+    display: none;
+  }
+  .section-description:before {
+    display: none;
+  }
+  .init .section-header {
+    margin: 0;
+  }
+  .testimonials .client-testimonials {
+    width: 280px;
   }
 }
