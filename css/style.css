@@ -1328,7 +1328,7 @@ Testimonials Section
     padding-top: 50px;
   }
   .testimonials .slider-controls {
-    bottom: 80px;
+    bottom: 40px;
   }
 }
 
@@ -1414,7 +1414,7 @@ Clients Section
 }
 
 .clients .btn-bottom a {
-  width: 461px;
+  width: 90%;
   padding: 35.5px;
   text-align: left;
   border: 1px solid #ffa938;
@@ -1427,7 +1427,7 @@ Clients Section
 }
 
 .clients .btn-top a {
-  width: 338px;
+  width: 70%;
   background: #ffffff;
   padding: 18px;
 }
@@ -1546,13 +1546,7 @@ Footer
 footer {
   display: flex;
   flex-wrap: wrap;
-  color: #fff;
   background-color: #0098d9;
-}
-
-footer .footer-heading {
-  font-size: 40px;
-  line-height: 0.9;
 }
 
 footer .footer-left {
@@ -1567,22 +1561,31 @@ footer .footer-left .footer-col {
   padding: 60px 0;
 }
 
-footer .footer-left li {
-  font-size: 24px;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-}
-
 footer .footer-left .title {
   font-size: 40px;
   background-color: transparent;
   margin-bottom: 10px;
 }
 
+footer .footer-left .footer-list {
+  margin-bottom: 20px;
+}
+
+footer .footer-left .footer-list .list-item a {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #ffffff;
+}
+
 footer .footer-left .footer-links .title {
   margin-bottom: 30px;
+}
+
+footer .footer-left .footer-links .title a {
+  color: #ffd000;
 }
 
 footer .footer-left .social-media-links li {
@@ -1594,6 +1597,11 @@ footer .footer-left .social-media-links li:first-child {
   margin-left: 0;
 }
 
+footer .footer-heading {
+  font-size: 40px;
+  line-height: 0.9;
+}
+
 footer .footer-right {
   flex: 40%;
   display: flex;
@@ -1601,7 +1609,6 @@ footer .footer-right {
 }
 
 footer .footer-right .footer-row:nth-child(2) {
-  flex: 1;
   text-align: center;
 }
 
@@ -1617,7 +1624,6 @@ footer .footer-right .footer-row:nth-child(2) > div:last-child {
 }
 
 footer .footer-right .form {
-  position: relative;
   max-width: 600px;
   padding: 0 20px;
   width: 100%;
@@ -1661,10 +1667,6 @@ footer .field textarea {
   min-height: 150px;
 }
 
-/*::-webkit-resizer {
-  background-color: #ffffff;
-}*/
-
 footer .field ::placeholder {
   color: #b5e8f6;
   text-transform: uppercase;
@@ -1676,11 +1678,9 @@ footer .field input:focus , textarea:focus {
 
 footer .form .btn-submit {
   font-family: 'BebasNeue';
-  float: right;
   width: 200px;
   font-size: 30px;
   text-transform: uppercase;
-  text-align: center;
   margin: 10px 0 50px;
   padding: 2px 0;
   background: transparent;
@@ -1693,6 +1693,26 @@ footer .form button span {
 
 footer .footer-right .contact-details p {
   font-size: 26px;
+}
+
+footer .copyright {
+  background: #3b3d47;
+  flex: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer .copyright ul li {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  margin: 0 20px;
+}
+
+footer .copyright ul li a {
+  color: #ffffff;
 }
 
 @media (max-width: 1200px) {
@@ -1714,5 +1734,12 @@ footer .footer-right .contact-details p {
   footer .footer-left, footer .footer-right {
     flex: 100%;
     justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  footer .copyright ul li {
+    font-size: 18px;
+    margin: 0 8px;
   }
 }
