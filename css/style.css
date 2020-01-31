@@ -1027,7 +1027,7 @@ Platforms Section
     margin: 3%;
   }
 
-  .platforms .platforms-content .learning .btn {
+  .platforms .platforms-content .learning .btn, .init .init-video{
     order: 2;
     margin: 0;
   }
@@ -1052,87 +1052,95 @@ Platforms Section
 /*==========================
 Init Section
 ==========================*/
-#init {
+.init {
   padding: 0 0 50px;
   position: relative;
 }
 
-#init .init-container {
+.init .flex-container {
   align-items: center;
 }
 
-#init .video-popup {
-  display: inline-block;
-  position: absolute;
-  left: 40%;
-  top: 40%;
+.init .init-video {
+  text-align: center;
 }
 
-#init .section-title:before {
+.init .video-popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.init .video-popup .video-play-btn {
+  display: block;
+}
+
+.init .section-title:before {
   top: 100%;
   width: 100%;
   left: 0;
   background: #0098d9;
 }
 
-#init .section-description:before {
+.init .section-description:before {
   top: -60px;
   left: -40px;
   width: 60%;
   height: 170%;
 }
 
-#init .init-inner .btn {
-  display: inline-block;
+.init .btn {
   margin: 50px 0;
   width: 252px;
 }
 
-#init .init-framework {
+.init .init-framework {
   margin: 3% 1% 1% 1%;
 }
 
-#init .init-framework .box {
+.init .init-framework .box {
   flex: 1 1 29%;
   display: flex;
   margin: 2% 2% 5%;
   align-items: center;
 }
 
-#init .init-framework .box:nth-child(n+4) {
+.init .init-framework .box:nth-child(n+4) {
   justify-content: flex-end;
 }
 
-#init .box .box-content {
+.init .box .box-content {
   width: 250px;
 }
 
-#init .box h3 {
+.init .box .box-content .box-title {
   display: inline-block;
   font-size: 30px;
   width: 65%;
   line-height: 1;
+  vertical-align: bottom;
 }
 
-#init .box img {
+.init .box .box-content img {
   display: inline-block;
 }
 
-#init .box p {
+.init .box .box-content .section-description {
   margin-left: 10px;
 }
 
-#init .box p:before {
+.init .box .box-content .section-description:before {
   background: none;
 }
 
-#init .init-framework .box h2 {
+.init .init-framework .box .title-span {
   position: relative;
   font-size: 38px;
   padding: 0 10px;
 }
 
-#init .init-framework .box h2:before {
+.init .init-framework .box .title-span:before {
   content: "";
   position: absolute;
   border: 1px solid #b8ac9c;
@@ -1143,13 +1151,13 @@ Init Section
 }
 
 @media (max-width: 1200px) {
-  #init .init-framework .box:nth-child(n) {
+  .init .init-framework .box:nth-child(n) {
     justify-content: center;
   }
 }
 
 @media (max-width: 1024px) {
-  #init .init-container .init-video {
+  .init .init-container .init-video {
     order: 2;
     margin: 0;
     flex: 51%;
@@ -1157,21 +1165,21 @@ Init Section
 }
 
 @media (max-width: 900px) {
-  #init .init-container .section-header {
+  .init .section-header {
     margin-left: 35%;
   }
-  #init .section-description:before {
+  .init .section-description:before {
     width: 120%;
     height: 145%;
   }
-  #init .section-title:before {
+  .init .section-title:before {
     width: 140%;
     left: -25%;
   }
 }
 
 @media (max-width: 600px) {
-  #init .section-title:before {
+  .init .section-title:before {
     width: 125%;
     left: -10%;
   }
