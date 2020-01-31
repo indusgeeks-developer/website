@@ -430,6 +430,27 @@ Sections
 }
 
 /*==========================
+Flex-Container
+==========================*/
+.flex-container {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.flex-inner {
+  position: relative;
+  flex: 1 1 48%;
+  margin: 1%;
+}
+
+@media (max-width: 900px) {
+  .flex-inner {
+    flex: 100%;
+    margin: 0;
+  }
+}
+
+/*==========================
 Hero
 ==========================*/
 
@@ -753,11 +774,6 @@ Industry
   margin: 0 auto;
 }
 
-.industry .industry-sectors {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .industry .industry-sectors .box {
   position: relative;
   flex: 1 1 25%;    
@@ -905,27 +921,6 @@ Industry
   }
   .industry .seperator_two img {
     width: 100%;
-  }
-}
-
-/*==========================
-Flex-Container
-==========================*/
-.flex-container {
-  display: flex;
-  flex-wrap: wrap
-}
-
-.flex-inner {
-  position: relative;
-  flex: 1 1 48%;
-  margin: 1%;
-}
-
-@media (max-width: 900px) {
-  .flex-inner {
-    flex: 100%;
-    margin: 0;
   }
 }
 
@@ -1188,73 +1183,75 @@ Init Section
 /*==========================
 Testimonials Section
 ==========================*/
-#testimonials {
+.testimonials {
   padding: 80px 0;
   position: relative;
 }
 
-#testimonials .testimonials-container .section-header {
+.testimonials .flex-inner {
+  margin: 0;
+}
+
+.testimonials .section-header {
   flex: 30%;
 }
 
-#testimonials .section-title:before {
+.testimonials .section-title:before {
   top: 100%;
-  left: -10%;
-  width: 50%;
+  left: -30%;
+  width: 100%;
   background: #72d431;
 }
 
-#testimonials .section-header .section-description {
-  width: 55%;
+.testimonials .section-header .section-description {
+  width: 60%;
 }
 
-#testimonials .section-description:before {
+.testimonials .section-description:before {
   top: -60px;
   left: -40px;
   width: 150%;
   height: 100%;
 }
 
-#testimonials .testimonials-container .testimonials-inner:nth-child(2) {
+.testimonials .flex-inner:nth-child(2) {
   flex: 70%;
   margin-top: 10%;
 }
 
-#testimonials .testimonials-container .client-testimonials {
+.testimonials .client-testimonials {
   position: relative;
   width: 750px;
   max-width: 100%;
   margin: 0 auto;
 }
 
-#testimonials .testimonials-container .slider-testimonials {
+.testimonials .slider-testimonials {
   width: 100%;
   padding-top: 50px;
 }
 
-#testimonials .slide-container {
+.testimonials .slide-container {
   display: flex;
   align-items: center;
 }
 
-#testimonials .slide-container .slide-img {
-  position: relative;
+.testimonials .slide-container .slide-img {
   flex: 20%;
 }
 
-#testimonials .slide-container .slide-content {
-  position: relative;
+.testimonials .slide-container .slide-content {
   flex: 75%;
   margin-left: 5%;
 }
 
-#testimonials .slide-container .slide-content .slide-text {
+.testimonials .slide-container .slide-content .slide-text {
   position: relative;
   padding: 3% 3% 8% 3.5%;
   overflow: hidden;
 }
 
-#testimonials .slide-container .slide-text:before {
+.testimonials .slide-container .slide-text:before {
   content: "";
   position: absolute;
   bottom: -5%;
@@ -1264,81 +1261,85 @@ Testimonials Section
   background: url(../img/testimonial_panel.png) no-repeat;
 }
 
-#testimonials .slide-container .slide-content p {
+.testimonials .slide-container .slide-content p {
   margin: 0 0 10px;
   color: #ffffff;
 }
 
-#testimonials .slide-container .slide-content p:before {
+.testimonials .slide-container .slide-content p:before {
   background: none;
 }
 
-#testimonials .slide-container .slide-content .client-details {
+.testimonials .slide-container .slide-content .client-details {
   margin-top: 20px;
 }
 
-#testimonials .slide-container .slide-content .client-details h3 {
+.testimonials .slide-container .slide-content .client-details .client-name {
   font-size: 25px;
 }
 
-#testimonials .slide-container .slide-content .client-details p {
+.testimonials .slide-container .slide-content .client-details .designation {
   font-size: 20px;
   font-weight: 300;
   color: #b8ac9c;
   letter-spacing: 1px;
 }
 
-#testimonials  .slider-controls {
+.testimonials  .slider-controls {
   position: absolute;
   bottom: 30px;
   right: 0;
 }
 
-#testimonials .slider-controls .prev, #testimonials .slider-controls .next {
+.testimonials .slider-controls .prev, .testimonials .slider-controls .next {
   background: #ffffff;
   padding: 0;
   outline: 0;
   border: none;
+  cursor: pointer;
 }
 
-#testimonials .slider-controls .next {
+.testimonials .slider-controls .next {
   margin-left: 15px;
 }
 
 @media (max-width: 1366px) {
-  #testimonials .testimonials-container .section-header {
+  .testimonials .section-header {
     flex: 35%;
   }
-  #testimonials .testimonials-container .testimonials-inner:nth-child(2) {
-  flex: 65%;
+  .testimonials .flex-inner:nth-child(2) {
+    flex: 65%;
   }
-  #testimonials .testimonials-container .client-testimonials {
+  .testimonials .client-testimonials {
     width: 600px;
   }
 }
 
 @media (max-width: 768px) {
-  #testimonials .slide-container  {
+  .testimonials .slide-container  {
     flex-direction: column;
   }
-  #testimonials .slide-container .slide-content {
+  .testimonials .slide-container .slide-content {
     margin: 0;
     top: -40px;
     z-index: -1;
   }
-  #testimonials .slide-container .slide-content .slide-text {
+  .testimonials .slide-container .slide-content .slide-text {
     padding-top: 50px;
+  }
+  .testimonials .slider-controls {
+    bottom: 80px;
   }
 }
 
 @media (max-width: 768px) {
-  #testimonials .testimonials-container .client-testimonials {
+  .testimonials .client-testimonials {
     width: 460px;
   }
 }
 
 @media (max-width: 600px) {
-  #testimonials .testimonials-container .client-testimonials {
+  .testimonials .client-testimonials {
     width: 360px;
   }
 }
@@ -1347,23 +1348,23 @@ Testimonials Section
 /*==========================
 Clients Section
 ==========================*/
-#clients {
+.clients {
   padding: 50px 0;
   position: relative;
 }
 
-#clients .section-title {
+.clients .section-title {
   padding-left: 20%;
 }
 
-#clients .section-title:before {
+.clients .section-title:before {
   top: 100%;
   left: -15%;
   width: 43%;
   background: #ba80ff;
 }
 
-#clients .section-title:after {
+.clients .section-title:after {
   content: "";
   position: absolute;
   top: 60%;
@@ -1374,65 +1375,64 @@ Clients Section
   z-index: -1;
 }
 
-#clients .clients-container {
+.clients .container {
   width: 65%;
   margin: 1% auto;
 }
 
-#clients .clients-container .box {
+.clients .box {
   position: relative;
   left: -15%;
   display: flex;
 }
 
-#clients .clients-container .box .box-img {
-  position: relative;
+.clients .box .box-img {
   background: #ffffff;
   margin: 3% 10%;
   border: 1px solid #dddbcf;
 }
 
-#clients .clients-container .box:nth-child(2) {
+.clients .box:nth-child(2) {
   left: -5%;
 }
 
-#clients .clients-container .box:nth-child(3) {
+.clients .box:nth-child(3) {
   left: 5%;
 }
 
-#clients .clients-container .box:nth-child(4) {
+.clients .box:nth-child(4) {
   left: 15%;
 }
 
-#clients .client-btn {
+.clients .client-btn {
   margin: 150px 0 0;
 }
 
-#clients .btn a {
+.clients .btn a {
   position: relative;
   margin: 0 auto;
 }
 
-#clients .btn-bottom a {
+.clients .btn-bottom a {
   width: 461px;
   padding: 35.5px;
   text-align: left;
   border: 1px solid #ffa938;
 }
 
-#clients .btn-top {
+.clients .btn-top {
   position: relative;
   top: -38px;
   left: -20px;
 }
 
-#clients .btn-top a {
+.clients .btn-top a {
   width: 338px;
   background: #ffffff;
   padding: 18px;
 }
 
-#clients .btn-top a:before {
+.clients .btn-top a:before {
   content: "";
   position: absolute;
   top: -15px;
@@ -1444,44 +1444,44 @@ Clients Section
 }
 
 @media (max-width: 1024px) {
-  #clients .clients-container {
+  .clients .container {
     width: 80%;
   }
-  #clients .clients-container .box:nth-child(2) {
+  .clients .box:nth-child(2) {
     left: -9%;
   }
-  #clients .clients-container .box:nth-child(3) {
+  .clients .box:nth-child(3) {
     left: -3%;
   }
-  #clients .clients-container .box:nth-child(4) {
+  .clients .box:nth-child(4) {
     left: 3%;
   }
 }
 
 @media (max-width: 768px) {
-  #clients .clients-container .box .box-img {
+  .clients .box .box-img {
     margin: 3% 5% 3% 8%
   }
 }
 
 @media (max-width: 600px) {
-  #clients .section-title:after {
+  .clients .section-title:after {
     width: 20%;
   }
-  #clients .clients-container {
+  .clients .clients-container {
     width: 95%;
   }
-  #clients .clients-container .box {
+  .clients .box {
     flex-wrap: wrap;
   }
-  #clients .clients-container .box:nth-child(n) {
+  .clients .box:nth-child(n) {
     left: 0;
   }
-  #clients .clients-container .box .box-img:nth-child(odd) {
+  .clients .box .box-img:nth-child(odd) {
     margin: 3% 0;
     margin-left: auto;
   }
-  #clients .clients-container .box .box-img:nth-child(even) {
+  .clients .box .box-img:nth-child(even) {
     margin: 3% 0;
     margin-right: auto;
   }
@@ -1491,24 +1491,24 @@ Clients Section
 /*==========================
 Awards Section
 ==========================*/
-#awards {
+.awards {
   padding: 50px 0;
   position: relative;
 }
 
-#awards .section-title {
+.awards .section-title {
   text-align: right;
   right: 10%;
 }
 
-#awards .section-title:before {
+.awards .section-title:before {
   top: 100%;
   right: -8%;
   width: 43%;
   background: #ffa938;
 }
 
-#awards .section-title:after {
+.awards .section-title:after {
   content: "";
   position: absolute;
   top: 18%;
@@ -1519,23 +1519,23 @@ Awards Section
   z-index: -1;
 }
 
-#awards .awards-container .box {
+.awards .box {
   flex: 1 1 auto;
   margin: 3% 0;
 }
 
-#awards .awards-container .box .box-content {
+.awards .box .box-content {
   width: 240px;
   margin: 0 auto;
 }
 
-#awards .awards-container .box .box-img {
+.awards .box .box-img {
   background: #ffffff;
   border: 1px solid #dddbcf;
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-  #awards .awards-container .box .box-content {
+  .awards .box .box-content {
     margin: 1%;
   }
 }
