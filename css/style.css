@@ -1750,12 +1750,18 @@ footer .copyright ul li a {
   }
 }
 
-@media (max-width: 468px) {
+@media (max-width: 467px) {
   .section-title:before, .section-title:after {
-    display: none;
+    top: 0;
+    left: 0;
+    right: 0
+    width: 100%;
   }
   .section-description:before {
-    display: none;
+    top: 0
+    left: 0;
+    right: 0;
+    width: 100%;
   }
   .init .section-header {
     margin: 0;
