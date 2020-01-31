@@ -16,6 +16,6 @@ $(document).ready(function(){
 		prevArrow: $(".prev"),
     	nextArrow: $(".next"),
 		fade: true,
-		fadeSpeed: 1000
+		fadeSpeed: 1000	
 	});
 });
