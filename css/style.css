@@ -201,7 +201,9 @@ Header
 ==========================*/
 
 header {
+  position: relative;
   display: flex;
+  z-index: 999;
 }
 
 header #logo {
@@ -236,7 +238,7 @@ header nav ul.menu li {
   padding-bottom: 10px;
 }
 
-header nav ul.menu li a, label {
+header nav ul.menu li a, .toggle {
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 300;
@@ -285,11 +287,21 @@ header nav ul.menu li:hover .sub-menu {
     display: flex;
 }
 
-header > #nav-check, .toggle, [id^=drop] {
+header > #nav-check, .dropdown #drop-check, .toggle{
   display: none;
 }
 
 @media (max-width:768px) {
+  .mobile-body-overly {
+    width: 100%;
+    height: 100%;
+    z-index: 997;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #ffffff;
+    display: none;
+}
   header > .nav-btn {
     display: flex;
     flex-grow: 1;
@@ -319,15 +331,13 @@ header > #nav-check, .toggle, [id^=drop] {
   header .nav-container nav ul.menu {
     display: block;
   }
-  header nav ul.menu > li{
+  header nav ul.menu > li {
     width: 100%;
     padding: 20px;
     border-bottom: 1px solid #e8e8e8;
   }
-  header nav ul.menu label {
-    width: 100%;
-    padding: 20px;
-    border-bottom: 1px solid #e8e8e8;
+  header nav ul.menu li a, .toggle {
+    font-size: 30px;
   }
   header > #nav-check:not(:checked) ~ .nav-container {
     height: 0px;
@@ -336,20 +346,33 @@ header > #nav-check, .toggle, [id^=drop] {
     height: calc(100vh - 80px);
     transition: all 0.3s ease-in;
     padding-top: 30px;
+    overflow: visible;
+  }
+  li.dropdown > a {
+    display: none;
   }
   header nav ul.menu li:hover .sub-menu {
     display: none;
   }
+  header nav .sub-menu .sub-menu-item {
+    max-width: 80%
+  }
+  header nav .sub-menu-list {
+    padding-left: 20px;
+  }
+  header nav ul.sub-menu-list li {
+    padding:5px;
+    padding-left: 0;
+    border-bottom: 1px solid #e8e8e8; 
+  }
   .toggle {
-    display: block;
+    display: inherit;
     cursor: pointer;
-  }
-  .toggle + a {
-  display: none;
-  }
-  [id^=drop]:checked + ul {
+  }   
+  #drop-check:checked ~ ul.sub-menu {
     display: inherit;
     position: static;
+    border: none;
   }
 }
 
