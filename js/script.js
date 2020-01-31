@@ -1,4 +1,3 @@
-// Resize your browser for effect
 $(document).ready(function(){
 
 	$('input[name="nav-check"]').click(function(){
@@ -10,6 +9,11 @@ $(document).ready(function(){
 	        $(".mobile-body-overly").css({"display":"none"});
 	    }
     });
+
+    $( window ).resize(function() {
+		$('input[type=checkbox]').prop("checked", false);
+		$(".mobile-body-overly").css({"display":"none"});
+	});
 
    $('.slider-hero').slick({
 	  	infinite: true,
@@ -29,4 +33,5 @@ $(document).ready(function(){
 		fade: true,
 		fadeSpeed: 1000	
 	});
+	
 });
