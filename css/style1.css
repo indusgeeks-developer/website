@@ -444,7 +444,7 @@ Sections
     font-size: 70px;
   }
   .section-description {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -1063,6 +1063,131 @@ Platforms Section
 }
 
 /*==========================
+Init Section
+==========================*/
+.init {
+  padding: 0 0 50px;
+  position: relative;
+}
+
+.init .flex-container {
+  align-items: center;
+}
+
+.init .init-video {
+  text-align: center;
+  z-index: 1; 
+}
+
+.init .video-popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.init .video-popup .video-play-btn {
+  display: block;
+}
+
+.init .section-title:before {
+  background: #0098d9;
+}
+
+.init .section-description:before {
+  top: -60px;
+  height: 150%;
+}
+
+.init .btn {
+  margin: 50px 0;
+  width: 252px;
+}
+
+.init .init-framework {
+  margin: 3% 1% 1% 1%;
+}
+
+.init .init-framework .box {
+  flex: 1 1 29%;
+  display: flex;
+  margin: 2% 2% 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+.init .box .box-content {
+  width: 250px;
+}
+
+.init .box .box-content .box-title {
+  display: inline-block;
+  font-size: 30px;
+  width: 65%;
+  line-height: 1;
+  vertical-align: bottom;
+}
+
+.init .init-framework .box .title-span {
+  position: relative;
+  font-size: 38px;
+  padding: 0 10px;
+}
+
+.init .init-framework .box .title-span:before {
+  content: "";
+  position: absolute;
+  border: 1px solid #b8ac9c;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.init .box .box-content .section-description {
+  margin-left: 10px;
+}
+
+.init .box .box-content .section-description:before {
+  background: none;
+}
+
+@media only screen and (min-width: 469px) {
+  .init .section-header {
+      margin-left: 35%;
+  }
+  .init .section-title:before {
+    left: -10%;
+    width: 125%;
+  }
+  .init .section-description:before {
+    left: -40px;
+    height: 130%;
+    width: 120%;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .init .section-header {
+    margin: 1%;
+    order: 2;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .init .section-description:before {
+    width: 60%;
+    height: 170%;
+  }
+  .init .init-framework .box {
+    justify-content: flex-start;
+  }
+  .init .init-framework .box:nth-child(n+4) {
+      justify-content: flex-end;
+  }
+}
+
+/*==========================
 Clients Section
 ==========================*/
 .clients {
@@ -1244,7 +1369,7 @@ Awards Section
 }
 
 .awards .box .box-text .section-description:before {
-  display: none;  
+  background: none;
 }
 
 @media only screen and (min-width: 469px) {
