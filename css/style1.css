@@ -399,7 +399,7 @@ Sections
   color: #666565;
 }
 
-.section-title:before {
+.section-title:before, .section-title:after {
   content: "";
   position: absolute;
   height: 1px;
@@ -436,7 +436,7 @@ Sections
   z-index: -1;
 }
 
-@media only screen and (min-width: 468px) {
+@media only screen and (min-width: 4609px) {
   .section-title {
     font-size: 40px;
   }
@@ -444,7 +444,7 @@ Sections
     font-size: 70px;
   }
   .section-description {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
@@ -1059,5 +1059,69 @@ Platforms Section
 @media only screen and (min-width: 1201px) {
   .platforms .section-description {
     width: 60%;
+  }
+}
+
+/*==========================
+Awards Section
+==========================*/
+.awards {
+  padding: 50px 0;
+  position: relative;
+}
+
+.awards .section-title {
+  text-align: right;
+  right: 10%;
+}
+
+.awards .section-title:before {
+  background: #ffa938;
+  left: auto;
+}
+
+.awards .section-title:after {
+  top: 18%;
+  right: -5%;
+  left: auto;
+  width: 40%;
+  height: 200%;
+  background: url(../img/dots_pattern_grey.png) repeat;
+  z-index: -1;
+}
+
+.awards .box {
+  flex: 1 1 0;
+  margin: 3%;
+}
+
+.awards .box .box-content {
+  width: 240px;
+  margin: 0 auto;
+}
+
+.awards .box .box-img {
+  background: #ffffff;
+  border: 1px solid #dddbcf;
+}
+
+.awards .box .box-text .section-description:before {
+  display: none;  
+}
+
+@media only screen and (min-width: 469px) {
+  .awards .section-title:before {
+    top: 100%;
+    right: -8%;
+    width: 43%;
+  }
+  .awards .section-title:after {
+    right: -22%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .awards .box .box-content {
+    margin: 1%;
   }
 }
