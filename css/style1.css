@@ -931,3 +931,133 @@ Industry
     width: 20%;
   }
 }
+
+/*==========================
+Platforms Section
+==========================*/
+.platforms {
+  padding: 100px 0;
+  position: relative;
+}
+
+.platforms .section-title:before {
+  background: #0098d9;
+}
+
+.platforms .section-description {
+  width: 80%;
+}
+
+.platforms .section-description:nth-of-type(1):before {
+  top: -60px;
+  width: 50%;
+  height: 443px;
+}
+
+.platforms .section-img {
+  position: relative;
+  left: 3%;
+}
+
+.platforms .section-description:nth-of-type(2) {
+  margin: 10% 0 0 auto;
+  right: 0;
+  text-align: right;
+  width: 60%;
+}
+
+.platforms .section-description:nth-of-type(2):before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -70%;
+  width: 60%;
+  height: 1px;
+  background: #0098d9;
+}
+
+.platforms .platforms-content {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.platforms .platforms-content .learning {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 0 3% 10%;
+}
+
+.platforms .platforms-content .learning .btn, .init .init-video {
+  order: 2;
+}
+
+.platforms .platforms-content .learning .learning-type {
+  font-size: 30px;
+  text-align: center;
+  margin: 10px 0 15px;
+}
+
+.platforms .seperator {
+  height: 95px;
+  margin: 0;
+}
+
+@media only screen and (min-width: 469px) {
+  .platforms .section-title:before {
+    width: 55%;
+  }
+  .platforms .section-description:nth-of-type(1):before {
+    left: -30px;    
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .platforms .section-description:nth-of-type(2) {
+    width: 40%;
+    right: 20%;
+  }
+  .platforms .section-description:nth-of-type(2):before {
+    width: 120%;
+    left: -120%;  
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .platforms .platforms-content {
+    justify-content: flex-end;
+  }
+  .platforms .platforms-content .learning {
+    flex-direction: row;
+    margin: 0 0 15% 0;
+  }
+  .platforms .platforms-content .learning .btn {
+    margin-right: 30px;
+  }
+  .platforms .platforms-content .learning-icon, .init .init-video {
+    order: 2;
+  } 
+  .platforms .platforms-content .learning .learning-type {
+    text-align: right;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+  .platforms .platforms-content .learning-icon img {
+    max-width: 160px;
+  }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1320px) {
+  .platforms .platforms-content .learning-icon img {
+    max-width: 240px;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .platforms .section-description {
+    width: 60%;
+  }
+}
