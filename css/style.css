@@ -201,8 +201,12 @@ Header
 ==========================*/
 
 header {
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 76px;
   display: flex;
+  background: #ffffff;
   z-index: 999;
 }
 
@@ -284,7 +288,7 @@ header nav .sub-menu-list .sub-menu-list-item a {
 
   header .nav-container {
     position: absolute;
-    top: 110px;
+    top: 100%;
     left: 0;
     height: auto;
     width: 100%;
@@ -293,7 +297,9 @@ header nav .sub-menu-list .sub-menu-list-item a {
   }
 
   header nav {
-    padding: 0 15px;
+    padding: 30px 15px;
+    height: 92vh;
+    overflow-y: auto;
   }
 
   header nav .menu .menu-item {
@@ -476,7 +482,7 @@ Hero
 .hero .slider-hero {
   width: 100%;
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 126px;
 }
 
 .hero .slide .slide-container {

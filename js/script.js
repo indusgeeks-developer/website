@@ -1,11 +1,14 @@
 $(document).ready(function(){
 
 	$('input[name="nav-check"]').click(function(){
+
+		$("html, body").css("overflow-y", "hidden")
 	    if($(this).prop("checked") == true){
-	        $(".mobile-body-overly").css({"display":"block"});
+	        $(".mobile-body-overly").css({"display":"block", "overflow":"hidden"});
 	        $('input[name="drop-check"]').prop("checked", false);
 	    }
 	    else if($(this).prop("checked") == false){
+	    	$("html, body").css("overflow-y", "auto")
 	        $(".mobile-body-overly").css({"display":"none"});
 	    }
     });
