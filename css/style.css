@@ -206,10 +206,11 @@ p {
 }
 
 .btn a {
-  display: block;
+  display: table-cell;
+  vertical-align: middle;
   text-align: center;
-  margin: 10px 0;
-  padding: 2px 0;
+  width: 200px;
+  height: 43px;
   font-size: 30px;
   border: 1px solid #000000;
 }
@@ -442,7 +443,7 @@ Sections
   font-size: 55px;
 }
 
-.section-description {
+.section-description, .description {
   position: relative;
   font-size: 20px;
   font-weight: 300;
@@ -470,8 +471,8 @@ Sections
   .section-title span {
     font-size: 70px;
   }
-  .section-description {
-    font-size: 22px;
+  .section-description, .description {
+    font-size: 25px;
   }
 }
 
@@ -808,6 +809,10 @@ Industry
   margin-bottom: 20px;
 }
 
+.industry .industry-sectors .box .box-img {
+  margin-bottom: 10px;
+}
+
 .industry .seperator_two {
   position: relative;
   top: 60%;
@@ -1118,6 +1123,9 @@ Init Section
 
 .init .btn {
   margin: 50px 0;
+}
+
+.init .btn a {
   width: 252px;
 }
 
@@ -1165,8 +1173,8 @@ Init Section
   margin-left: 10px;
 }
 
-.init .box .box-content .section-description:before {
-  background: none;
+.init .box .box-content .description {
+  padding-left: 10px;
 }
 
 @media only screen and (min-width: 469px) {
@@ -1435,8 +1443,10 @@ Clients Section
   margin: 150px 0 0;
 }
 
-.clients .btn a {
+.clients .client-btn a {
+  display: block;
   position: relative;
+  font-size: 30px;
   margin: 0 auto;
 }
 
@@ -1444,7 +1454,6 @@ Clients Section
   width: 461px;
   max-width: 95%;
   padding: 35.5px;
-  text-align: left;
   border: 1px solid #ffa938;
 }
 
@@ -1458,7 +1467,9 @@ Clients Section
   width: 338px;
   max-width: 80%;
   background: #ffffff;
+    text-align: center;
   padding: 18px;
+  border: 1px solid #000000;
 }
 
 .clients .btn-top a:before {
@@ -1887,16 +1898,12 @@ Industry Pages
   font-weight: 300;
 }
 
-.use-cases {
+.use-cases, .products {
   padding: 50px 0;
 }
 
 .use-cases .section-header, .use-cases .industry-video {
   margin: 5% 1%;
-}
-
-.use-cases .industry-video {
-  align-self: flex-end;
 }
 
 .use-cases .section-title:before {
@@ -1929,20 +1936,30 @@ Industry Pages
   color: #666565;
 }
 
+.products .product-boxes .box .btn {
+  margin-top: 20px;
+}
+
 .products .product-boxes .box .product-name {
-  margin: 0;
   font-size: 30px;
   margin-top: 30px;
 }
 
-.products .product-boxes .box .product-description {
-  font-size: 20px;
-  font-weight: 300;
+.case-study {
+  padding-bottom: 50px;
 }
 
-.products .product-boxes .btn {
-  display: inline-block;
-  width: 200px;
+.case-study .section-title:before {
+  background: #ffa938;
+}
+
+.case-study .flex-container .box {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.case-study .box-img {
+  margin-bottom: 50px;
 }
 
 @media only screen and (min-width: 469px) {
@@ -1965,13 +1982,12 @@ Industry Pages
   .products .product-boxes .box .product-name {
     font-size: 38px;
   }
-
-  .products .product-boxes .box .product-description {
-    font-size: 20px;
+  .case-study .section-title:before {
+    left: -25px;
   }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   .industry-hero .industry-bg {
     padding: 50px 30px;
   }
@@ -1996,6 +2012,29 @@ Industry Pages
     display: block;
     margin-top: 5px;
   }
+  .industry-pages .box-img {
+    position: relative;
+    padding: 50px 20px;
+  }
+  .industry-pages .box-img img {
+    position: relative;
+  }
+  .products .bg-layer-two {
+    width: 90%;
+    height: 70%;
+  }
+  .products .product-boxes .box .box-content {
+    padding-left: 20px;
+  }
+  .products .product-boxes .box .product-name {
+    margin-top: 0;
+  }
+  .case-study .bg-layer-two {
+    width: 540px;
+  }
+  .case-study .box-img {
+    margin-bottom: 0;
+  }
 }
 
 @media only screen and (min-width: 901px) {
@@ -2004,6 +2043,20 @@ Industry Pages
   }
   .industry-hero .industry-content .industry-header {
     font-size: 40px;
+  }
+  .use-cases .industry-video img {
+    position: relative;
+    top: 25%;
+  }
+}
+
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+  .case-study .flex-inner {
+    margin: 2%;
+  }
+  .case-study .flex-inner:first-child {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -2024,22 +2077,21 @@ Industry Pages
     width: 35%;
   }
   .products .product-boxes .box {
-    width: 50%;
+    width: 60%;
     margin: 30px 0 50px auto;
+  }
+  .products .product-boxes .box .box-img img {
+    width: 100%;
   }
   .products .product-boxes .box:nth-child(2) {
     margin: 50px auto 30px 0;
   }
-  .industry-pages .box .box-img {
-    position: relative;
+  .case-study .box-img {
+    padding-bottom: 0;
   }
-  .industry-pages .box-img img {
-    position: relative;
-    margin: 50px 20px;
-  }
-  .industry-pages .bg-layer-two {
+  .case-study .bg-layer-two {
     width: 90%;
-    height: 70%;
+    height: 80%;
   }
 }
 
@@ -2050,6 +2102,10 @@ Industry Pages
   .industry-hero .industry-content .industry-text {
     margin: 0;
     font-size: 18px;
+  }
+  .case-study .flex-container {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
