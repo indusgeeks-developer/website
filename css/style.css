@@ -512,7 +512,7 @@ Flex-Container
 Hero
 ==========================*/
 
-.hero .slider-hero, .industry-hero {
+.hero .slider-hero, .pages .hero {
   width: 100%;
   margin: 0 auto;
   padding-top: 126px;
@@ -705,7 +705,7 @@ Hero
 }
 
 @media only screen and (min-width: 768px) {
-  .hero .slider-hero, .industry-hero {
+  .hero .slider-hero, .pages .hero {
     width: 98%;
   }
   .hero .slide .slide-container {
@@ -764,7 +764,7 @@ Hero
 }
 
 @media only screen and (min-width: 1201px) {
-  .hero .slider-hero, .industry-hero  {
+  .hero .slider-hero, .pages .hero  {
     width: 85%;
   }
 }
@@ -838,7 +838,7 @@ Industry
   bottom: 0;
 }
 
-.industry .industry-content {
+.industry .hero-content {
   position: relative;
   top: 68%;
   left: 35%;
@@ -846,17 +846,17 @@ Industry
   width: 60%;
 }
 
-.industry .industry-content .section-description {
+.industry .hero-content .section-description {
   padding-bottom: 15px;
   margin-bottom: 25px;
 }
 
-.industry .industry-content .section-description:before {
+.industry .hero-content .section-description:before {
   top: 100%;
   height: 1px;
 }
 
-.industry .industry-content .section-title {
+.industry .hero-content .section-title {
   line-height: 1.1;
 }
 
@@ -871,12 +871,12 @@ Industry
     width: 85%;
     height: 140%;
   }
-  .industry .industry-content .section-description {
+  .industry .hero-content .section-description {
     padding-bottom: 15px;
     margin-bottom: 25px;
   }
 
-  .industry .industry-content .section-description:before {
+  .industry .hero-content .section-description:before {
     left: -35%;
     height: 1px;
   }
@@ -918,7 +918,7 @@ Industry
   .industry .industry-sectors .box:nth-child(n+5) {
     margin: 400px 0 100px 0;
   }
-  .industry .industry-content {
+  .industry .hero-content {
     position: absolute;
     left: 15%;
     width: 30%;
@@ -945,14 +945,14 @@ Industry
     left: 15%;
     bottom: 10%;
   }
-  .industry .industry-content {
+  .industry .hero-content {
     left: 28%;
     top: 62%;
   }
 }
 
 @media only screen and (min-width: 1321px) {
-  .industry .industry-content {
+  .industry .hero-content {
     left: 35%;
     width: 20%;
   }
@@ -1819,14 +1819,13 @@ footer .copyright ul li a {
   }
 }
 
-
 /*==========================
-Industry Pages
+Pages
 ==========================*/
-.industry-pages .section-title {
+.pages .section-title {
   margin-bottom: 30px;
 }
-.industry-pages .section-title:after {
+.pages .section-title:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -1837,43 +1836,43 @@ Industry Pages
   z-index: -1;
 }
 
-.industry-hero .industry-container {
+.pages .hero .hero-container {
   position: relative;
 }
 
-.industry-hero .bg-layer-one {
+.pages .hero .bg-layer-one {
   display: none;
 }
 
-.industry-hero .industry-bg {
+.pages .hero .hero-bg {
   position: relative;
   z-index: 1;
 }
 
-.industry-hero .industry-bg img {
+.pages .hero .hero-bg img {
   width: 100%;
 }
 
-.industry-hero .industry-content {
+.pages .hero .hero-content {
   position: absolute;
   top: 0;
-  left: 30px;
-  right: 30px;
+  left: 10px;
+  right: 10px;
   display: flex;
   justify-content: space-between;
   padding: 10px;
   height: 100%;
 }
 
-.industry-hero .industry-content .content-left {
-  width: 39%;
+.pages .hero .hero-content .content-left {
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.industry-hero .industry-content .content-right {
+.pages .hero .hero-content .content-right {
   position: relative;
   align-self: flex-end;
   width: 50%;
@@ -1881,15 +1880,27 @@ Industry Pages
   text-align: right;
 }
 
-.industry-hero .industry-content .industry-header {
-  font-size: 40px;
+.pages .hero .hero-content .hero-header {
+  font-size: 20px;
+  line-height: 1;
 }
 
-.industry-hero .industry-content .industry-text {
+.pages .hero .hero-content .hero-header span {
+  display: block;
+  font-size: 35px;
+}
+
+.pages .hero .hero-content .hero-text {
   display: none;
   margin-bottom: 0;
   font-weight: 300;
 }
+
+
+/*==========================
+Industry Pages
+==========================*/
+
 
 .use-cases, .products {
   padding: 80px 0;
@@ -1973,6 +1984,12 @@ Industry Pages
 }
 
 @media only screen and (min-width: 469px) {
+  .pages .hero .hero-content .hero-header {
+    font-size: 25px;
+  }
+  .pages .hero .hero-content .hero-header span {
+    font-size: 55px;
+  }
   .industry-pages .use-cases .section-title:before {
     left: -10%;
     width: 90%;
@@ -2012,16 +2029,16 @@ Industry Pages
 }
 
 @media only screen and (min-width: 768px) {
-  .industry-hero .industry-bg {
+  .pages .hero .hero-bg {
     padding: 50px 30px;
   }
-  .industry-hero .bg-layer-one {
+  .pages .hero .bg-layer-one {
     display: block;
     width: 20%;
     height: 75%;
     right: 0;
   }
-  .industry-hero .bg-layer-two {
+  .pages .hero .bg-layer-two {
     background-color: transparent;
     border: 5px solid;
     top: 20px;
@@ -2029,10 +2046,14 @@ Industry Pages
     width: 85%;
     height: 70%;
   }
-  .industry-hero .industry-bg img {
+  .pages .hero .hero-bg img {
     height: 250px;
   }
-  .industry-hero .industry-content .industry-text {
+  .pages .hero .hero-content {
+    left: 40px;
+    right: 40px;
+  }
+  .pages .hero .hero-content .hero-text {
     display: block;
     margin-top: 5px;
   }
@@ -2062,11 +2083,20 @@ Industry Pages
 }
 
 @media only screen and (min-width: 901px) {
-  .industry-hero .industry-content {
+  .pages .hero .hero-content {
     padding: 30px;
   }
-  .industry-hero .industry-content .industry-header {
-    font-size: 40px;
+  .platform-pages .hero .hero-content .content-left {
+    width: 49%;
+  }
+  .pages .hero .hero-content .hero-header {
+    font-size: 32px;
+  }
+  .pages .hero .hero-content .hero-header span {
+    font-size: 65px;
+  }
+  .platform-pages .hero .hero-content .hero-text {
+    font-size: 18px;
   }
   .use-cases .industry-video img {
     position: relative;
@@ -2091,14 +2121,17 @@ Industry Pages
 }
 
 @media only screen and (min-width: 1025px) {
-  .industry-hero .industry-bg img {
+  .pages .hero .hero-bg img {
     height: auto;
   }
-  .industry-hero .industry-content {
+  .pages .hero .hero-content {
     padding: 20px;
   }
-  .industry-hero .industry-content .industry-header {
-    font-size: 60px;
+  .platform-pages .hero .hero-content .content-left {
+    width: 50%;
+  }
+  .pages .hero .hero-content .hero-header { 
+    font-size: 45px;
   }
   .products .section-title:before {
       width: 45%;
@@ -2126,12 +2159,11 @@ Industry Pages
 }
 
 @media only screen and (min-width: 1321px) {
-  .industry-hero .industry-content .industry-header {
-    font-size: 75px;
-  }
-  .industry-hero .industry-content .industry-text {
-    margin: 0;
+  .pages .hero .hero-content .hero-text {
     font-size: 18px;
+  }
+  .platform-pages .hero .hero-content .hero-text {
+    font-size: 22px;
   }
   .case-study .flex-container {
     width: 80%;
@@ -2143,13 +2175,20 @@ Industry Pages
 }
 
 @media only screen and (min-width: 1601px) {
-  .industry-hero .industry-content {
+  .pages .hero .hero-content {
     padding: 50px;
   }
-  .industry-hero .industry-content .industry-header {
-    font-size: 90px;
+  .pages .hero .hero-content .hero-header {
+    font-size: 55px;
+    margin-bottom: 10px;
   }
-  .industry-hero .industry-content .industry-text {
+  .pages .hero .hero-content .hero-header span {
+    font-size: 88px;
+  }
+  .pages .hero .hero-content .hero-text {
     font-size: 22px;
+  }
+  .platform-pages .hero .hero-content .hero-text {
+    font-size: 24px;
   } 
 }
