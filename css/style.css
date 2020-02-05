@@ -47,6 +47,7 @@ img {
 
 a {
   text-decoration: none;
+  color: #666565;
 }
 
 ul, nav {
@@ -59,11 +60,13 @@ ul, nav {
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   margin: 0;
+  color: #666565;
 }
 
 p {
   letter-spacing: 1px;
   word-spacing: 1.5px;
+  color: #666565;
 }
 
 .main-container{
@@ -100,9 +103,6 @@ p {
 
 .pink {
   color: #ed0f4b;
-}
-
-.pink-bg {
   background-color: #ed0f4b;
 }
 
@@ -114,9 +114,6 @@ p {
 
 .purple {
   color: #ba80ff;
-}
-
-.purple-bg {
   background-color: #ba80ff;
 }
 
@@ -127,17 +124,11 @@ p {
 
 .atlantis {
   color: #72d431;
-}
-
-.atlantis-bg {
   background-color: #72d431;
 }
 
 .orange {
   color: #ffa938;
-}
-
-.orange-bg {
   background-color: #ffa938;
 }
 
@@ -147,9 +138,6 @@ p {
 
 .cerulean {
   color: #0098d9;
-}
-
-.cerulean-bg {
   background-color: #0098d9;
 }
 
@@ -163,17 +151,11 @@ p {
 
 .shamrock {
   color: #3ed1b3;
-}
-
-.shamrock-bg {
   background-color: #3ed1b3;
 }
 
 .picton {
   color: #36bbe3;
-}
-
-.picton-bg {
   background-color: #36bbe3;
 }
 
@@ -197,8 +179,8 @@ p {
   color: #ffffff
 }
 
-.gray {
-  color: #666565;
+.black {
+  color: #000000;
 }
 
 .text_shadow {
@@ -425,9 +407,11 @@ Sections
   padding-bottom: 15px;
   font-size: 30px;
   line-height: 0.9;
-  color: #666565;
 }
 
+.section-title span {
+  background-color: transparent;
+}
 .section-title:before, .section-title:after {
   content: "";
   position: absolute;
@@ -449,7 +433,6 @@ Sections
   font-weight: 300;
   line-height: 1.5;
   word-spacing: 2px;
-  color: #666565;
   margin-bottom: 0;
 }
 
@@ -474,6 +457,34 @@ Sections
   .section-description, .description {
     font-size: 25px;
   }
+}
+
+.pink-hr:before {
+  background: #e80f4b;
+}
+
+.orange-hr:before {
+  background-color: #ffa938;
+}
+
+.cerulean-hr:before {
+  background-color: #0098d9;
+}
+
+.atlantis-hr:before {
+  background-color: #72d431;
+}
+
+.purple-hr:before {
+  background-color: #ba80ff;
+}
+
+.picton-hr:before {
+  background-color: #36c0e8;
+}
+
+.gold-hr:before {
+  background-color: #ffd000;
 }
 
 /*==========================
@@ -658,6 +669,7 @@ Hero
 
 .hero .container .button-right .contact-btn {
   font-size: 30px;
+  color: #666565;
   border-radius: 50px;
   width: 150px;
   display: inline-block;
@@ -777,10 +789,6 @@ Industry
   position: relative;
 }
 
-.industry .main-container .section-title:before {
-  background: #e80f4b;
-}
-
 .industry .container {
   width: 80%;
   margin: 0 auto;
@@ -846,7 +854,6 @@ Industry
 .industry .industry-content .section-description:before {
   top: 100%;
   height: 1px;
-  background: #ffa938;
 }
 
 .industry .industry-content .section-title {
@@ -870,11 +877,8 @@ Industry
   }
 
   .industry .industry-content .section-description:before {
-    top: 100%;
     left: -35%;
-    width: 100%;
     height: 1px;
-    background: #ffa938;
   }
 }
 
@@ -962,10 +966,6 @@ Platforms Section
   position: relative;
 }
 
-.platforms .section-title:before {
-  background: #0098d9;
-}
-
 .platforms .section-description {
   width: 80%;
 }
@@ -995,7 +995,6 @@ Platforms Section
   left: -70%;
   width: 60%;
   height: 1px;
-  background: #0098d9;
 }
 
 .platforms .platforms-content {
@@ -1112,10 +1111,6 @@ Init Section
   display: block;
 }
 
-.init .section-title:before {
-  background: #0098d9;
-}
-
 .init .section-description:before {
   top: -60px;
   height: 150%;
@@ -1222,11 +1217,6 @@ Testimonials Section
 
 .testimonials .flex-inner {
   margin: 0 0 10%;
-}
-
-
-.testimonials .section-title:before {
-  background: #72d431;
 }
 
 .testimonials .section-header .section-description {
@@ -1401,10 +1391,6 @@ Clients Section
   padding-left: 20%;
 }
 
-.clients .section-title:before {
-  background: #ba80ff;
-}
-
 .clients .section-title:after {
   top: 60%;
   left: 12%;
@@ -1441,6 +1427,10 @@ Clients Section
 
 .clients .client-btn {
   margin: 150px 0 0;
+}
+
+.clients .client-btn span {
+  background-color: transparent;
 }
 
 .clients .client-btn a {
@@ -1544,7 +1534,6 @@ Awards Section
 }
 
 .awards .section-title:before {
-  background: #ffa938;
   left: auto;
 }
 
@@ -1708,25 +1697,29 @@ footer .form button span {
   background-color: transparent;
 }
 
-footer .footer-right .atlantis-bg {
+footer .footer-right .atlantis {
   text-align: center;
   padding-top: 20px;
 }
 
-footer .footer-right .atlantis-bg > div {
+footer .footer-right .atlantis > div {
   display: inline-block;
   vertical-align: middle;
   margin: 0;
   padding: 15px 0;
 }
 
-footer .footer-right .atlantis-bg > div:last-child {
+footer .footer-right .atlantis > div:last-child {
   margin: 0;
 }
 
 footer .footer-heading {
   font-size: 40px;
   line-height: 0.9;
+}
+
+footer .footer-heading span {
+  background-color: transparent;
 }
 
 footer .footer-right .contact-details p {
@@ -1766,7 +1759,7 @@ footer .copyright ul li a {
   footer .footer-left {
     padding: 0 10%;
   }
-  footer .footer-right .atlantis-bg > div {
+  footer .footer-right .atlantis > div {
     margin-right: 50px;
   }
   footer .copyright ul li {
@@ -1789,10 +1782,10 @@ footer .copyright ul li a {
     flex-direction: column;
     justify-content: space-between;
   }
-  footer .footer-right .atlantis-bg {
+  footer .footer-right .atlantis {
     padding: 0;
   }
-  footer .footer-right .atlantis-bg > div {
+  footer .footer-right .atlantis > div {
     margin-right: 10px;
   }
 }
@@ -1899,15 +1892,11 @@ Industry Pages
 }
 
 .use-cases, .products {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 .use-cases .section-header, .use-cases .industry-video {
   margin: 5% 1%;
-}
-
-.use-cases .section-title:before {
-  background: #ed0f4b;
 }
 
 .use-cases .uc-list .uc-item {
@@ -1921,10 +1910,6 @@ Industry Pages
   text-align: right;
 }
 
-.products .section-title:before {
-  background: #36c0e8;
-}
-
 .products .section-title:after {
   right: 0;
   left: auto;
@@ -1933,10 +1918,9 @@ Industry Pages
 .products .product-boxes .box {
   width: 100%;
   margin: 20px 0 60px;
-  color: #666565;
 }
 
-.products .product-boxes .box .btn {
+.products .btn, .case-study .btn {
   margin-top: 20px;
 }
 
@@ -1946,11 +1930,7 @@ Industry Pages
 }
 
 .case-study {
-  padding-bottom: 50px;
-}
-
-.case-study .section-title:before {
-  background: #ffa938;
+  padding-bottom: 80px;
 }
 
 .case-study .flex-container .box {
@@ -1960,6 +1940,36 @@ Industry Pages
 
 .case-study .box-img {
   margin-bottom: 50px;
+}
+
+.training {
+  padding: 120px 0;
+}
+
+.training .section-title:after {
+  background: none;
+}
+
+.training .flex-container {
+  margin-top: 80px;
+}
+
+.training .flex-inner {
+  display: flex;
+  justify-content: center;
+  margin: 2% 2% 5%;
+}
+
+.training .training-method {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.training .training-method .learning-type {
+  font-size: 30px;
+  margin-top: 20px;
 }
 
 @media only screen and (min-width: 469px) {
@@ -1982,8 +1992,22 @@ Industry Pages
   .products .product-boxes .box .product-name {
     font-size: 38px;
   }
-  .case-study .section-title:before {
+  .case-study .section-title:before, .training .section-title:before {
     left: -25px;
+  } 
+  .training .section-description:before {
+    height: 120%;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  .training .flex-inner {
+    flex: 1 1 48%;
+    margin: 1%;
+    justify-content: flex-start;
+  }
+  .training .flex-inner:nth-child(n+3) {
+    justify-content: flex-end;  
   }
 }
 
@@ -2048,6 +2072,12 @@ Industry Pages
     position: relative;
     top: 25%;
   }
+  .training .section-header {
+    width: 70%;
+  }
+  .training .section-description:before {
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1024px) {
@@ -2106,6 +2136,9 @@ Industry Pages
   .case-study .flex-container {
     width: 80%;
     margin: 0 auto;
+  }
+  .training .section-header {
+    width: 50%;
   }
 }
 
