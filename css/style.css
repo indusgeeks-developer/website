@@ -1913,10 +1913,10 @@ Industry Pages
 }
 
 .use-cases .uc-list .uc-item, .pf-best-app .app-list .app-item {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 300;
   color: #666565;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .products .section-title {
@@ -1999,7 +1999,7 @@ Industry Pages
 .platform-applications .why-pf .platform-video {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .platform-applications .why-pf .box .box-title {
@@ -2015,19 +2015,26 @@ Industry Pages
   font-size: 48px;
 }
 
-.platform-applications .pf-app .pf-desc {
-  flex: 30%;
-  margin: 5%;
+.platform-applications .pf-app .pf-desc, .platform-applications .pf-app .pf-best-app {
+  margin: 30px 0;
 }
 
-.platform-applications .pf-app .pf-best-app {
-  align-self: flex-end;
-  flex: 50%;
-  margin: 5%;
+.pf-best-app .box-img {
+  margin: 40px 5px 0 0;
+}
+
+.pf-best-app .box-content {
+  margin-top: 40px;
 }
 
 .pf-best-app .app-list .app-item {
+  font-size: 20px;
+}
 
+.pf-best-app .app-list .title {
+  font-size: 35px;
+  background-color: transparent;
+  margin-bottom: 40px;
 }
 
 @media only screen and (min-width: 469px) {
@@ -2043,6 +2050,9 @@ Industry Pages
   }
   .industry-pages .section-title:after {
     width: 70%;
+  }
+  .use-cases .uc-list .uc-item, .pf-best-app .app-list .app-item {
+    font-size: 30px;  
   }
   .products .section-title:before {
     width: 70%;
@@ -2076,6 +2086,15 @@ Industry Pages
   }
   .training .flex-inner:nth-child(n+3) {
     justify-content: flex-end;  
+  }
+  .pf-best-app .box-img {
+    margin-right: 30px;
+  }
+  .pf-best-app .app-list .title {
+    font-size: 40px;
+  }
+  .pf-best-app .app-list .app-item {
+    font-size: 30px;  
   }
 }
 
@@ -2165,6 +2184,13 @@ Industry Pages
   .platform-applications .section-title:after {
     width: 55%;
   }
+  .platform-applications .pf-app .pf-best-app {
+    margin-top: 100%;
+  }
+  .platform-applications .pf-app .pf-desc {
+    flex: 35%;
+    margin: 0 4% 0 2%;
+  }
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1024px) {
@@ -2213,6 +2239,15 @@ Industry Pages
     width: 90%;
     height: 80%;
   }
+  .platform-applications .pf-app .pf-desc {
+    flex: 30%;
+    margin: 0 5%;
+  }
+  .platform-applications .pf-app .pf-best-app {
+    flex: 50%
+    margin-right: 5%;
+    margin-left: 5%;
+  }
 }
 
 @media only screen and (min-width: 1321px) {
@@ -2231,6 +2266,9 @@ Industry Pages
   }
   .platform-applications .section-header {
     width: 60%;
+  }
+  .platform-applications .pf-app .pf-best-app {
+    margin-top: 35%;
   }
 }
 
