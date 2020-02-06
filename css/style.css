@@ -239,7 +239,7 @@ select {
   background-repeat: no-repeat;
   background-position: right;
   -webkit-appearance: none;
-  background-position-x: 97%;
+  background-position: 97%;
   cursor: pointer;
   color: #c6c6c6;
 }
@@ -1920,9 +1920,11 @@ Pages
 /*==========================
 Industry Pages
 ==========================*/
+.use-cases {
+  padding: 0 0 80px;
+}
 
-
-.use-cases, .products {
+.products {
   padding: 80px 0;
 }
 
@@ -1930,7 +1932,7 @@ Industry Pages
   margin: 5% 1%;
 }
 
-.use-cases .uc-list .uc-item, .pf-best-app .app-list .app-item {
+.use-cases .uc-list .uc-item, .pf-app-inner .app-list .app-item {
   font-size: 25px;
   font-weight: 300;
   color: #666565;
@@ -1976,8 +1978,11 @@ Industry Pages
 /*==========================
 Platform Pages
 ==========================*/
+.platform-applications {
+  padding: 80px 0;
+}
 
-.training, .platform-applications {
+.training {
   padding: 120px 0;
 }
 
@@ -2037,23 +2042,19 @@ Platform Pages
   font-size: 48px;
 }
 
-.platform-applications .pf-app .pf-desc, .platform-applications .pf-app .pf-best-app {
+.pf-desc .pf-desc-inner, .pf-app .pf-app-inner {
   margin: 30px 0;
 }
 
-.pf-best-app .box-img {
-  margin: 40px 5px 0 0;
+.pf-app-inner .box-content {
+  margin-top: 80px;
 }
 
-.pf-best-app .box-content {
-  margin-top: 40px;
-}
-
-.pf-best-app .app-list .app-item {
+.pf-app-inner .app-list .app-item {
   font-size: 20px;
 }
 
-.pf-best-app .app-list .title {
+.pf-app-inner .app-list .title {
   font-size: 35px;
   background-color: transparent;
   margin-bottom: 40px;
@@ -2073,7 +2074,7 @@ Platform Pages
   .industry-pages .section-title:after {
     width: 70%;
   }
-  .use-cases .uc-list .uc-item, .pf-best-app .app-list .app-item {
+  .use-cases .uc-list .uc-item, .pf-app-inner .app-list .app-item {
     font-size: 30px;  
   }
   .products .section-title:before {
@@ -2109,13 +2110,10 @@ Platform Pages
   .training .flex-inner:nth-child(n+3) {
     justify-content: flex-end;  
   }
-  .pf-best-app .box-img {
-    margin-right: 30px;
-  }
-  .pf-best-app .app-list .title {
+  .pf-app-inner .app-list .title {
     font-size: 40px;
   }
-  .pf-best-app .app-list .app-item {
+  .pf-app-inner .app-list .app-item {
     font-size: 30px;  
   }
 }
@@ -2206,12 +2204,12 @@ Platform Pages
   .platform-applications .section-title:after {
     width: 55%;
   }
-  .platform-applications .pf-app .pf-best-app {
-    margin-top: 100%;
-  }
-  .platform-applications .pf-app .pf-desc {
+  .platform-applications .pf-desc .pf-desc-inner {
     flex: 35%;
     margin: 0 4% 0 2%;
+  }
+  .platform-applications .pf-app .pf-app-inner {
+    margin-top: -300px;
   }
 }
 
@@ -2262,14 +2260,8 @@ Platform Pages
     width: 90%;
     height: 80%;
   }
-  .platform-applications .pf-app .pf-desc {
+  .platform-applications .pf-desc .pf-desc-inner {
     flex: 30%;
-    margin: 0 5%;
-  }
-  .platform-applications .pf-app .pf-best-app {
-    flex: 50%
-    margin-right: 5%;
-    margin-left: 5%;
   }
 }
 
@@ -2289,9 +2281,6 @@ Platform Pages
   }
   .platform-applications .section-header {
     width: 60%;
-  }
-  .platform-applications .pf-app .pf-best-app {
-    margin-top: 35%;
   }
 }
 
