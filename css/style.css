@@ -1058,7 +1058,7 @@ Industry
 Platforms Section
 ==========================*/
 .platforms {
-  padding: 100px 0;
+  padding: 100px 0 50px;
   position: relative;
 }
 
@@ -1184,7 +1184,7 @@ Platforms Section
 Init Section
 ==========================*/
 .init {
-  padding: 0 0 50px;
+  padding: 50px 0;
   position: relative;
 }
 
@@ -1308,7 +1308,7 @@ Init Section
 Testimonials Section
 ==========================*/
 .testimonials {
-  padding: 80px 0;
+  padding: 50px 0;
   position: relative;
 }
 
@@ -1418,17 +1418,11 @@ Testimonials Section
   .testimonials .client-testimonials {
     width: 600px;
   }
-  .testimonials .section-header {
-    flex: 35%;
-  }
-  .testimonials .flex-inner:nth-child(2) {
-    flex: 65%;
-  }
 }
 
 @media only screen and (min-width: 901px) {
-  .testimonials .slide-container {
-    flex-wrap: nowrap;
+ .testimonials .client-testimonials {
+    width: 670px;
   }
   .testimonials .slide-container .slide-content {
     top: 0;
@@ -1457,13 +1451,19 @@ Testimonials Section
   }
 }
 
-@media only screen and (min-width: 1161px) {
+@media only screen and (min-width: 1215px) {
+  .testimonials .section-header {
+    flex: 30%;
+  }
+  .testimonials .flex-inner:nth-child(2) {
+    flex: 70%;
+  }
   .testimonials .client-testimonials {
-    margin-top: 35%;
+    margin-top: 50%;
   }
 }
 
-@media only screen and (min-width: 1366px) {
+@media only screen and (min-width: 1370px) {
   .testimonials .section-header {
     flex: 30%;
   }
@@ -1621,7 +1621,7 @@ Clients Section
 Awards Section
 ==========================*/
 .awards {
-  padding: 50px 0;
+  padding: 50px 0 100px;
   position: relative;
 }
 
@@ -1674,7 +1674,7 @@ Awards Section
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
+@media only screen and (min-width: 682px) and (max-width: 1097px) {
   .awards .box .box-content {
     margin: 1%;
   }
