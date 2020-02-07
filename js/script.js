@@ -8,7 +8,7 @@ $(document).ready(function(){
 	        $('input[name="drop-check"]').prop("checked", false);
 	    }
 	    else if($(this).prop("checked") == false){
-	    	$("html, body").css("overflow-y", "auto")
+	    	$("html, body").css("overflow-y", "auto");
 	        $(".mobile-body-overly").css({"display":"none"});
 	    }
     });
@@ -20,6 +20,7 @@ $(document).ready(function(){
     	if(width==$(window).width()){
     		return;
     	}
+    	$("html, body").css("overflow-y", "auto");
 		$('input[type=checkbox]').prop("checked", false);
 		$(".mobile-body-overly").css({"display":"none"});
 	});
