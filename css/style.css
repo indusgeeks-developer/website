@@ -212,12 +212,13 @@ form {
 
 .field-wrap {
   display: flex;
+   flex-wrap: wrap;
   justify-content: flex-end;
 }
 
 .field-wrap .field {
-  flex: 1 1 0;
-  margin: 1.5% 2.5% 1% 0;
+  flex: 100%;
+  margin: 1.5% 0 1%;
 }
 
 .field-wrap .field:last-child {
@@ -274,6 +275,17 @@ input:focus , textarea:focus {
 
 .form button span {
   background-color: transparent;
+}
+
+@media only screen and (min-width: 468px) {
+  .field-wrap {
+    flex-wrap: nowrap;
+  }
+  .field-wrap .field {
+    flex: 1 1 0;
+    margin-right: 2.5%;
+    margin-top: 1%;
+  }
 }
 
 /*==========================
@@ -2336,11 +2348,6 @@ Contact Page
   height: 200%;
 }
 
-.contact-form .field-wrap .field {
-  margin-top: 1%;
-  margin-bottom: 1%;
-}
-
 .offices {
   padding: 0 0 100px;
 } 
@@ -2406,14 +2413,6 @@ Contact Page
 }
 
 @media only screen and (max-width: 468px) {
-  .contact-form .field-wrap {
-    flex-wrap: wrap;
-  }
-  .field-wrap .field {
-    flex: 100%;
-    margin-left: 0;
-    margin-right: 0;
-  }
   .offices .main-container {
     width: 90%;
   }
