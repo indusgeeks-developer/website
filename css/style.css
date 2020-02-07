@@ -132,6 +132,10 @@ p {
   background-color: #72d431;
 }
 
+.green {
+  color: #72cf31;
+}
+
 .orange {
   color: #ffa938;
   background-color: #ffa938;
@@ -573,6 +577,10 @@ Sections
 
 .purple-hr:before {
   background-color: #ba80ff;
+}
+
+.puerto_rico-hr:before {
+  background-color: #4ec7af;
 }
 
 .picton-hr:before {
