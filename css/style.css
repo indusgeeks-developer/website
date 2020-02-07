@@ -1945,16 +1945,8 @@ Pages
 /*==========================
 Industry Pages
 ==========================*/
-.use-cases {
-  padding: 0 0 80px;
-}
-
-.products {
-  padding: 80px 0;
-}
-
-.use-cases .section-header, .use-cases .industry-video {
-  margin: 5% 1%;
+.use-cases, .products, .case-study {
+  padding: 50px 0;
 }
 
 .use-cases .uc-list .uc-item, .pf-app-inner .app-list .app-item {
@@ -1987,10 +1979,6 @@ Industry Pages
   margin-top: 30px;
 }
 
-.case-study {
-  padding-bottom: 80px;
-}
-
 .case-study .flex-container .box {
   width: 95%;
   margin: 0 auto;
@@ -2000,15 +1988,8 @@ Industry Pages
   margin-bottom: 50px;
 }
 
-/*==========================
-Platform Pages
-==========================*/
-.platform-applications {
-  padding: 80px 0;
-}
-
 .training {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 
 .training .section-title:after {
@@ -2035,6 +2016,13 @@ Platform Pages
 .training .training-method .learning-type {
   font-size: 30px;
   margin-top: 20px;
+}
+
+/*==========================
+Platform Pages
+==========================*/
+.platform-applications {
+  padding: 60px 0;
 }
 
 .platform-applications .why-pf .box {
@@ -2230,6 +2218,9 @@ Platform Pages
   }
   .training .section-description:before {
     width: 80%;
+  }
+  .platform-applications {
+    margin-bottom: -300px;
   }
   .platform-applications .section-title:before {
     width: 80%;
