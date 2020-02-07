@@ -332,8 +332,8 @@ header nav .toggle {
 }
 
 header nav .sub-menu .sub-menu-item {
-  margin: 10px;
-  padding: 10px;
+  margin: 0 10px 10px;
+  padding: 0 10px 10px;
 }
 
 header nav .sub-menu .sub-menu-item a {
@@ -1243,7 +1243,8 @@ Init Section
 }
 
 .init .box .box-content {
-  width: 250px;
+  width: 280px;
+  min-height: 345px;
 }
 
 .init .box .box-content .box-title {
