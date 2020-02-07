@@ -13,7 +13,13 @@ $(document).ready(function(){
 	    }
     });
 
+    var width=0;
+	width=$(this).width();
+
     $( window ).resize(function() {
+    	if(width==$(window).width){
+    		return;
+    	}
 		$('input[type=checkbox]').prop("checked", false);
 		$(".mobile-body-overly").css({"display":"none"});
 	});

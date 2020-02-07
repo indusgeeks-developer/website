@@ -31,6 +31,7 @@
 
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -48,6 +49,7 @@ img {
 a {
   text-decoration: none;
   color: #666565;
+  background-color: transparent;
 }
 
 ul, nav {
@@ -237,7 +239,6 @@ input, textarea, select {
 select {
   background-image: url(../img/dropdown.png);
   background-repeat: no-repeat;
-  background-position: right;
   -webkit-appearance: none;
   background-position: 97%;
   cursor: pointer;
@@ -307,6 +308,7 @@ header nav .menu .menu-item a, header nav .toggle {
 header nav .toggle {
   display: block;
   cursor: pointer;
+  color: #666565;
 }
 
 header nav .sub-menu .sub-menu-item {
@@ -432,7 +434,7 @@ header nav .sub-menu-list .sub-menu-list-item a {
   }
 
   header nav .menu .menu-item a {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   header nav .sub-menu {
@@ -466,6 +468,12 @@ header nav .sub-menu-list .sub-menu-list-item a {
   }
 
   header nav .sub-menu-list .sub-menu-list-item a {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  header nav .menu .menu-item a {
     font-size: 20px;
   }
 }
@@ -1085,7 +1093,8 @@ Platforms Section
 }
 
 .platforms .platforms-content .learning .btn, .init .init-video {
-  order: 2;
+  order: 1;
+  align-self: center;
 }
 
 .platforms .platforms-content .learning .learning-type {
@@ -1131,7 +1140,7 @@ Platforms Section
     margin-right: 30px;
   }
   .platforms .platforms-content .learning-icon, .init .init-video {
-    order: 2;
+    order: 1;
   } 
   .platforms .platforms-content .learning .learning-type {
     text-align: right;
@@ -1263,7 +1272,7 @@ Init Section
 @media only screen and (min-width: 901px) {
   .init .section-header {
     margin: 1%;
-    order: 2;
+    order: 1;
   }
 }
 
@@ -2046,8 +2055,16 @@ Platform Pages
   margin: 30px 0;
 }
 
+.pf-app-inner .box-img {
+  position: relative;
+  left: -75px;
+  margin-top: 70px;
+}
+
 .pf-app-inner .box-content {
-  margin-top: 80px;
+  margin-top: 70px;
+  position: relative;
+  left: -55px;
 }
 
 .pf-app-inner .app-list .app-item {
@@ -2057,7 +2074,7 @@ Platform Pages
 .pf-app-inner .app-list .title {
   font-size: 35px;
   background-color: transparent;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 @media only screen and (min-width: 469px) {
@@ -2209,7 +2226,7 @@ Platform Pages
     margin: 0 4% 0 2%;
   }
   .platform-applications .pf-app .pf-app-inner {
-    margin-top: -300px;
+    top: -300px;
   }
 }
 
@@ -2366,6 +2383,10 @@ Contact Page
   margin: 15px 0;
 }
 
+.offices .box .office-address-one {
+  order: 1;
+}
+
 .offices .office-boxes .box-content .address {
   margin: 20px 0;
 }
@@ -2440,9 +2461,12 @@ Contact Page
   }
 }
 
-@media only screen and (min-width: 945px) {
+@media only screen and (min-width: 929px) {
   .offices .office-boxes .box .box-img {
     margin-left: 0;
+  }
+  .offices .box .office-address-one {
+    order: 0;
   }
 }
 
