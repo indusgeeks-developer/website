@@ -271,6 +271,7 @@ input:focus , textarea:focus {
   padding: 2px 0;
   background: transparent;
   border: 1px solid #000000;
+  cursor: pointer;
 }
 
 .form button span {
@@ -1712,7 +1713,7 @@ footer .footer-left .title {
   margin-bottom: 30px;
 }
 
-footer .footer-left .footer-links .title a {
+footer .footer-left .title a {
   color: #ffd000;
 }
 
