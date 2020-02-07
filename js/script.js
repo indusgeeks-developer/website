@@ -17,7 +17,7 @@ $(document).ready(function(){
 	width=$(this).width();
 
     $( window ).resize(function() {
-    	if(width==$(window).width){
+    	if(width==$(window).width()){
     		return;
     	}
 		$('input[type=checkbox]').prop("checked", false);
