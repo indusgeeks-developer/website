@@ -331,6 +331,10 @@ header nav .toggle {
   color: #666565;
 }
 
+header nav .sub-menu {
+  padding: 15px;
+}
+
 header nav .sub-menu .sub-menu-item {
   margin: 0 10px 10px;
   padding: 0 10px 10px;
@@ -465,7 +469,6 @@ header nav .sub-menu-list .sub-menu-list-item a {
     background-color: #ffffff;
     border: 1px solid #36c0e8;
     border-top: none;
-    padding: 15px;
     margin: 0 8px;
     box-shadow: 0 -15px 0 #fff, 0 1px 15px rgba(0,0,0, .2);
   }
@@ -2004,6 +2007,14 @@ Industry Pages
 
 .training {
   padding: 80px 0;
+}
+
+.training .section-title {
+  margin-bottom: 0;
+}
+
+.training .section-description:before {
+  top: -70px;
 }
 
 .training .section-title:after {
