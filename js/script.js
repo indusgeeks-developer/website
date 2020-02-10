@@ -8,7 +8,7 @@ $(document).ready(function(){
 	});
 
 	function parallaxed(e) {
-	      var amountMovedX = (e.clientX * -0.2/8);
+	      var amountMovedX = (e.clientX * -0.1/8);
 	      var amountMovedY = (e.clientY * -0.2/6);
 	      var x = document.getElementsByClassName("parallaxed");
 	      console.log(x);
