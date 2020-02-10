@@ -8,9 +8,9 @@ $(document).ready(function(){
 	});
 
 	function parallaxed(e) {
-	      var amountMovedX = (e.clientX * -0.1/8);
-	      var amountMovedY = (e.clientY * -0.2/6);
-	      var x = document.getElementsByClassName("parallaxed");
+	      var amountMovedX = (e.clientX * -0.1/6);
+	      var amountMovedY = (e.clientY * -0.3/8);
+	      var x = document.getElementsByClassName("parallax-layer-one");
 	      console.log(x);
 	      var i;
 	      for (i = 0; i < x.length; i++) {
