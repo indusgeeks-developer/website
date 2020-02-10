@@ -750,6 +750,10 @@ Hero
   background-color: #17d7e8;
 }
 
+.hero .slick-dots li.slick-active:nth-child(5) button {
+  background-color: #ffa938;
+}
+
 .hero .container {
   display: flex;
   justify-content: center;
@@ -2101,15 +2105,12 @@ Platform Pages
 }
 
 .pf-app-inner .box-img {
-  position: relative;
-  left: -75px;
-  margin-top: 70px;
+  display: none;
 }
 
 .pf-app-inner .box-content {
   margin-top: 70px;
   position: relative;
-  left: -55px;
 }
 
 .pf-app-inner .app-list .app-item {
@@ -2250,6 +2251,9 @@ Platform Pages
   .platform-pages .hero .hero-content .hero-text {
     font-size: 18px;
   }
+  .pf-desc .pf-desc-inner, .pf-app .pf-app-inner {
+    flex: 100%;
+  }
   .use-cases .industry-video img {
     position: relative;
     top: 25%;
@@ -2260,21 +2264,11 @@ Platform Pages
   .training .section-description:before {
     width: 80%;
   }
-  .platform-applications {
-    margin-bottom: -300px;
-  }
   .platform-applications .section-title:before {
     width: 80%;
   }
   .platform-applications .section-title:after {
     width: 55%;
-  }
-  .platform-applications .pf-desc .pf-desc-inner {
-    flex: 35%;
-    margin: 0 4% 0 2%;
-  }
-  .platform-applications .pf-app .pf-app-inner {
-    top: -300px;
   }
 }
 
@@ -2325,8 +2319,16 @@ Platform Pages
     width: 90%;
     height: 80%;
   }
-  .platform-applications .pf-desc .pf-desc-inner {
-    flex: 30%;
+  .platform-applications .pf-app-inner .box-img {
+    position: relative;
+    left: -70px;
+    margin-top: 70px;
+  }
+  .platform-applications .pf-app-inner .box-img {
+    display: block;
+  }
+  .platform-applications .pf-app-inner .box-content {
+    left: -40px;
   }
 }
 
@@ -2344,8 +2346,22 @@ Platform Pages
   .training .section-header {
     width: 50%;
   }
+  .platform-applications {
+    margin-bottom: -200px;
+  }
   .platform-applications .section-header {
     width: 60%;
+  }
+   .platform-applications .pf-desc .pf-desc-inner {
+    flex: 35%;
+    margin: 0 4% 0 2%;
+  }
+  .platform-applications .pf-app .pf-app-inner {
+    top: -250px;
+    flex: 50%;
+  }
+  .platform-applications .pf-app .pf-app-inner .flex-container {
+    flex-wrap: nowrap;
   }
 }
 
