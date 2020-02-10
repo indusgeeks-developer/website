@@ -830,6 +830,7 @@ Hero
     height: 100%;
     opacity: 0.9;
     z-index: -1;
+    transition: all .5s linear;
   }
   .bg-layer-two {
     position: absolute;
@@ -839,6 +840,7 @@ Hero
     height: 75%;
     opacity: 0.85;
     z-index: 0;
+    transition: all .1s linear;
   }
   .hero .slide .slide-content .left {
     width: 35%;
@@ -877,7 +879,7 @@ Hero
 
 @media only screen and (min-width: 1201px) {
   .hero .slider-hero, .pages .hero  {
-    width: 85%;
+    width: 90%;
   }
 }
 
