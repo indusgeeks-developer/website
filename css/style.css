@@ -772,6 +772,7 @@ Hero
 .hero .container .button-right {
   position: absolute;
   right: 20px;
+  bottom: 0;
 }
 
 .hero .container .button-right .contact-btn {
@@ -1098,15 +1099,14 @@ Platforms Section
   margin: 10% 0 0 auto;
   right: 0;
   text-align: right;
-  width: 60%;
 }
 
 .platforms .section-description:nth-of-type(2):before {
   content: "";
   position: absolute;
   top: 50%;
-  left: -70%;
-  width: 60%;
+  left: -35%;
+  width: 35%;
   height: 1px;
 }
 
@@ -1151,16 +1151,16 @@ Platforms Section
 
 @media only screen and (min-width: 601px) {
   .platforms .section-description:nth-of-type(2) {
-    width: 40%;
+    width: 65%;
     right: 20%;
-  }
-  .platforms .section-description:nth-of-type(2):before {
-    width: 120%;
-    left: -120%;  
   }
 }
 
 @media only screen and (min-width: 901px) {
+  .platforms .section-description:nth-of-type(2):before {
+    width: 50%;
+    left: -60%;  
+  }
   .platforms .platforms-content {
     justify-content: flex-end;
   }
@@ -1251,8 +1251,10 @@ Init Section
 }
 
 .init .box .box-content {
-  width: 280px;
-  min-height: 345px;
+  width: 250px;
+  /*min-height: 380px;*/
+  /*width: 280px;*/
+  /*min-height: 345px;*/
 }
 
 .init .box .box-content .box-title {
@@ -1302,6 +1304,16 @@ Init Section
   }
 }
 
+@media only screen and (min-width: 769px) {
+  .init .init-framework .box {
+    margin: 2%;
+  }
+  .init .box .box-content {
+    width: 270px;
+    min-height: 380px;
+  }
+}
+
 @media only screen and (min-width: 901px) {
   .init .section-header {
     margin: 1%;
@@ -1319,6 +1331,10 @@ Init Section
   }
   .init .init-framework .box:nth-child(n+4) {
       justify-content: flex-end;
+  }
+  .init .box .box-content {
+    width: 250px;
+    height: 345px;
   }
 }
 
