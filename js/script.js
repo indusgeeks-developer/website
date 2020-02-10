@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 100) {
+			$('#btn-float').addClass('btn-fixed');
+		} else {
+	      $('#btn-float').removeClass('btn-fixed');
+	    }
+	});
+
 	$('input[name="nav-check"]').click(function(){
 
 		$("html, body").css("overflow-y", "hidden")
