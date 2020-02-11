@@ -66,13 +66,13 @@ p {
   margin: 0 auto;
 }
 
-.seperator {
+.separator {
   position: relative;
   height: 32px;
   margin: 45px 0;
 }
 
-.seperator img {
+.separator img {
   position: absolute;
   right: 0;
 }
@@ -948,18 +948,18 @@ Industry
   margin-bottom: 10px;
 }
 
-.industry .seperator_two {
+.industry .separator_two {
   position: relative;
   top: 60%;
 }
 
-.industry .seperator_three {
+.industry .separator_three {
   position: absolute;
   left: 15%;
   bottom: 3%;
 }
 
-.industry .seperator_four {
+.industry .separator_four, .contact-form .separator_four {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1050,7 +1050,7 @@ Industry
     left: 15%;
     width: 30%;
   }
-  .industry .seperator_two {
+  .industry .separator_two {
     position: absolute; 
   }
 }
@@ -1065,22 +1065,28 @@ Industry
   .industry .main-container .section-description:before {
     height: 180%;
   }
-  .industry .seperator_two {
+  .industry .separator_two {
     top: 55%;
   }
-  .industry .seperator_three {
+  .industry .separator_three {
     left: 15%;
     bottom: 10%;
   }
   .industry .industry-content {
-    left: 28%;
+    left: 25%;
     top: 62%;
   }
 }
 
 @media only screen and (min-width: 1321px) {
   .industry .industry-content {
-    left: 35%;
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1701px) {
+  .industry .industry-content {
+    left: 32%;
     width: 20%;
   }
 }
@@ -1148,7 +1154,7 @@ Platforms Section
   margin: 10px 0 15px;
 }
 
-.platforms .seperator {
+.platforms .separator {
   height: 95px;
   margin: 0;
 }
@@ -2399,7 +2405,8 @@ Contact Page
 ==========================*/
 
 .contact-form {
-  padding: 200px 0 100px;
+  position: relative;
+  padding: 200px 0;
 }
 
 .contact-form .section-title:after {
@@ -2572,5 +2579,14 @@ Contact Page
   }
   .offices .section-title:after {
     width: 45%;
+  }
+}
+
+@media only screen and (min-width: 1701px) {
+  .contact-form {
+    padding-bottom: 100px;
+  }
+  .contact-form .separator_four {
+    bottom: 22%;
   }
 }
