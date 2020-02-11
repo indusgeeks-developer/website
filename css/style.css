@@ -245,8 +245,7 @@ textarea {
 }
 
 ::placeholder {
-  color: #c6c6c6;
-  text-transform: uppercase;
+  color: #c6c6c6; 
 }
 
 input:focus , textarea:focus {
@@ -457,7 +456,7 @@ header nav .sub-menu-list .sub-menu-list-item a {
     border: 1px solid #36c0e8;
     border-top: none;
     margin: 0 8px;
-    box-shadow: 0 -15px 0 #fff, 0 1px 15px rgba(0,0,0, .2);
+    box-shadow: 0 -10px 0 #fff, 0 1px 10px rgba(0,0,0, .2);
   }
 
   header nav .menu .menu-item:hover .sub-menu {
