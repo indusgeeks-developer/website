@@ -1,25 +1,25 @@
 $(document).ready(function(){
 
-	var b = document.getElementsByClassName("parallax-container")[0];  
-	console.log(b);
+	// var b = document.getElementsByClassName("parallax-container")[0];  
+	// console.log(b);
 
-	b.addEventListener("mousemove", function(event) {
-	  parallaxed(event);
-	});
+	// b.addEventListener("mousemove", function(event) {
+	//   parallaxed(event);
+	// });
 
-	function parallaxed(e) {
-	      var amountMovedX = (e.clientX * -0.1/6);
-	      var amountMovedY = (e.clientY * -0.3/8);
-	      var x = document.getElementsByClassName("parallax-layer-one");
-	      console.log(x);
-	      var i;
-	      for (i = 0; i < x.length; i++) {
-	        x[i].style.transform='translate(' + amountMovedX + 'px,' + amountMovedY + 'px)'
-	      }
-	}
+	// function parallaxed(e) {
+	//       var amountMovedX = (e.clientX * -0.1/6);
+	//       var amountMovedY = (e.clientY * -0.3/8);
+	//       var x = document.getElementsByClassName("parallaxed");
+	//       console.log(x);
+	//       var i;
+	//       for (i = 0; i < x.length; i++) {
+	//         x[i].style.transform='translate(' + amountMovedX + 'px,' + amountMovedY + 'px)'
+	//       }
+	// }
 
 	$(window).scroll(function () {
-		if ($(this).scrollTop() > 100) {
+		if ($(this).scrollTop() > 120) {
 			$('#btn-float').addClass('btn-fixed');
 		} else {
 	      $('#btn-float').removeClass('btn-fixed');
