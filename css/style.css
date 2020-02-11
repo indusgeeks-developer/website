@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../lib/fonts/BebasNeue-Regular.eot'); /* IE9 Compat Modes */
+  src: url('../lib/fonts/BebasNeue-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../lib/fonts/BebasNeue-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../lib/fonts/BebasNeue-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../lib/fonts/BebasNeue-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('../lib/fonts/BebasNeue-Book.eot'); /* IE9 Compat Modes */
+  src: url('../lib/fonts/BebasNeue-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../lib/fonts/BebasNeue-Book.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../lib/fonts/BebasNeue-Book.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../lib/fonts/BebasNeue-Book.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 300;
+} 
+
 * {
   box-sizing: border-box;
 }
