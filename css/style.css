@@ -824,7 +824,7 @@ Hero
   }
   .slider-hero .bg-layer-one  {
     /*transition: all .9s linear;*/
-     animation: mover-a 5s ease-in-out infinite alternate;
+     animation: mover-a 5s ease-in-out infinite;
   }
   .bg-layer-two {
     position: absolute;
@@ -1893,7 +1893,7 @@ footer .copyright ul li a {
     flex: 60%;
   }
   footer .footer-left .footer-col:nth-child(n) {
-    flex: 1 1 0;
+    width: 50%;
     padding-right: 10px;
     display: block;
   }

@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	// var b = document.getElementsByClassName("parallax-container")[0];  
+	// var b = document.getElementsByClassName("hero")[0];  
 	// console.log(b);
 
 	// b.addEventListener("mousemove", function(event) {
@@ -8,7 +8,7 @@ $(document).ready(function(){
 	// });
 
 	// function parallaxed(e) {
-	//       var amountMovedX = (e.clientX * -0.1/6);
+	//       var amountMovedX = (e.clientX * -0.2/6);
 	//       var amountMovedY = (e.clientY * -0.3/8);
 	//       var x = document.getElementsByClassName("parallaxed");
 	//       console.log(x);
