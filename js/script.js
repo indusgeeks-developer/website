@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+	 document.activeElement.blur();
+
 	// var b = document.getElementsByClassName("hero")[0];  
 	// console.log(b);
 
@@ -89,7 +91,6 @@ $(document).ready(function(){
 		return "image" + index;
 	});
 
-	// Configure particles-js
 	particlesJS('particles-js',
 	  {
 	    "particles": {
@@ -97,29 +98,54 @@ $(document).ready(function(){
 	        "value": img_src.length, // No of images
 	        "density": {
 	          "enable": true,
-	          "value_area": 800 // Specify area (Lesser is greater density)
+	          "value_area": 750 // Specify area (Lesser is greater density)
 	        }
 	      },
+	      "color": {
+	        "value": "#5affd4"
+	      },
 	      "shape": {
-	        "type":  image_type
+	        "type":  image_type, // Add images to particle-js
+	        "stroke": {
+	          "width": 0,
+	        },
+	        "polygon": {
+	          "nb_sides": 4
+	        }
 	      },
 	      "opacity": {
-	        "value": 1
+	        "value": 0.9, // Adjust opactiy
+	        "random": false,
+	        "anim": {
+	          "enable": false,
+	        }
 	      },
 	      "size": {
-	      	"width": 100,
-	      	"height": 100
+	        "value": 20, // Adjust the image size
+	        "random": false,
+	        "anim": {
+	          "enable": false,	         
+	        }
+	      },
+	      "line_linked": {
+	        "enable": false,
+	        "distance": 200,
+	        "color": "#ffffff",
+	        "opacity": 1,
+	        "width": 2
 	      },
 	      "move": {
 	        "enable": true,
-	        "speed": 1,   // Speed of particle motion
-	        "out_mode": "out"
-	      }
-	    },
-	    "interactivity": {
-	      "detect_on": "canvas",
-	      "events": {	        
-	        "resize": true
+	        "speed": 0.5,   // Speed of particle motion
+	        "direction": "none",
+	        "random": true,
+	        "straight": false,
+	        "bounce": false,
+	        "attract": {
+	          "enable": false,
+	          "rotateX": 600,
+	          "rotateY": 1200
+	        }
 	      }
 	    },
 	    "retina_detect": true
