@@ -152,7 +152,7 @@ $(document).ready(function(){
 	        }
 	      },
 	      "size": {
-	        "width": 20, // Adjust the image size
+	      	"value": 20,
 	        "random": false,
 	        "anim": {
 	          "enable": false,	         
