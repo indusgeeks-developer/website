@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-	 document.activeElement.blur();
-
 	// var b = document.getElementsByClassName("hero")[0];  
 	// console.log(b);
 

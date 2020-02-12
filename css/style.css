@@ -196,11 +196,11 @@ p {
 }
 
 .btn a {
-  display: table-cell;
-  vertical-align: middle;
+  display: inline-block;
   text-align: center;
+  word-spacing: 2px;
   width: 200px;
-  height: 43px;
+  line-height: 41px;
   font-size: 30px;
   border: 1px solid #000000;
 }
