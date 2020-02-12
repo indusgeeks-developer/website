@@ -247,6 +247,9 @@ select {
   background-image: url(../img/dropdown.png);
   background-repeat: no-repeat;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
   background-position: 97%;
   cursor: pointer;
   color: #c6c6c6;
@@ -256,8 +259,16 @@ textarea {
   min-height: 150px;
 }
 
-::placeholder {
+:-ms-input-placeholder {
   color: #c6c6c6; 
+}
+
+::-webkit-input-placeholder {
+  color: #c6c6c6;
+}
+
+::-moz-placeholder {
+    color: #c6c6c6;
 }
 
 input:focus , textarea:focus {
