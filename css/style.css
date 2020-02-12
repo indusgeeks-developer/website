@@ -1777,10 +1777,10 @@ footer .footer-left .footer-list .list-item a {
   line-height: 1.5;
   letter-spacing: 1px;
   word-spacing: 2px;
-  color: #ffffff;
+  color: #ffd000;
 }
 
-footer .footer-left .title {
+footer .footer-left .title, footer .footer-left .page-category {
   font-size: 40px;
   background-color: transparent;
   margin-bottom: 30px;

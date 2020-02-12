@@ -97,18 +97,18 @@ $(document).ready(function(){
 	        "value": img_src.length, // No of images
 	        "density": {
 	          "enable": true,
-	          "value_area": 1200 // Specify area (Lesser is greater density)
+	          "value_area": 800 // Specify area (Lesser is greater density)
 	        }
 	      },
 	      "shape": {
 	        "type":  image_type
 	      },
 	      "opacity": {
-	        "value": 0.9
+	        "value": 1
 	      },
 	      "size": {
-	      	"width": 5,
-	      	"height": 5
+	      	"width": 100,
+	      	"height": 100
 	      },
 	      "move": {
 	        "enable": true,
@@ -125,6 +125,4 @@ $(document).ready(function(){
 	    "retina_detect": true
 	  }
 	);
-
-	
 });
