@@ -196,9 +196,9 @@ p {
 }
 
 .btn a {
-  display: inline-block;
-  text-align: center;
-  word-spacing: 2px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
   line-height: 41px;
   font-size: 30px;
