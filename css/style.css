@@ -1283,9 +1283,6 @@ Init Section
 
 .init .box .box-content {
   width: 250px;
-  /*min-height: 380px;*/
-  /*width: 280px;*/
-  /*min-height: 345px;*/
 }
 
 .init .box .box-content .box-title {
@@ -1299,6 +1296,7 @@ Init Section
 .init .init-framework .box .title-span {
   position: relative;
   font-size: 38px;
+  line-height: 40px;
   padding: 0 10px;
 }
 
