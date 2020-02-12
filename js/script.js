@@ -20,36 +20,36 @@ $(document).ready(function(){
 
 	$(function(){
 
-    var cacheInput = null;
-    var timer = null;
-    if(!isApple()){
-        return false;
-    }
-    $(document).on('focus','input',function(e){
-        cacheInput = e.target;
-    })
-    $(document).on('focus','textarea',function(e){
-        cacheInput = e.target;
-    })
-    $(document).on('touchend',function(e){
-        if(e.target.tagName!=='INPUT'&&e.target.tagName!=='TEXTAREA'){
-            if(cacheInput!==null){
-                timer = setTimeout(function(){
-                    cacheInput.blur();
-                    clearTimeout(timer);
-                },300)
-            }
-        }
-    })
-    function isApple(){
-        var ua = navigator.userAgent.toUpperCase();
-        var 
-          ipad = ua.indexOf('IPAD')>-1,
-          ipod = ua.indexOf('IPOD')>-1,
-          iphone = ua.indexOf('IPHONE')>-1 ;
-        return   ipad || ipod || iphone ;
-    }
-});
+	    var cacheInput = null;
+	    var timer = null;
+	    if(!isApple()){
+	        return false;
+	    }
+	    $(document).on('focus','input',function(e){
+	        cacheInput = e.target;
+	    })
+	    $(document).on('focus','textarea',function(e){
+	        cacheInput = e.target;
+	    })
+	    $(document).on('touchend',function(e){
+	        if(e.target.tagName!=='INPUT'&&e.target.tagName!=='TEXTAREA'){
+	            if(cacheInput!==null){
+	                timer = setTimeout(function(){
+	                    cacheInput.blur();
+	                    clearTimeout(timer);
+	                },300)
+	            }
+	        }
+	    })
+	    function isApple(){
+	        var ua = navigator.userAgent.toUpperCase();
+	        var 
+	          ipad = ua.indexOf('IPAD')>-1,
+	          ipod = ua.indexOf('IPOD')>-1,
+	          iphone = ua.indexOf('IPHONE')>-1 ;
+	        return   ipad || ipod || iphone ;
+	    }
+	});
 
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 120) {
@@ -129,7 +129,7 @@ $(document).ready(function(){
 	        "value": img_src.length, // No of images
 	        "density": {
 	          "enable": true,
-	          "value_area": 750 // Specify area (Lesser is greater density)
+	          "value_area": 700 // Specify area (Lesser is greater density)
 	        }
 	      },
 	      "color": {
@@ -152,7 +152,7 @@ $(document).ready(function(){
 	        }
 	      },
 	      "size": {
-	        "value": 20, // Adjust the image size
+	        "width": 20, // Adjust the image size
 	        "random": false,
 	        "anim": {
 	          "enable": false,	         
