@@ -355,7 +355,7 @@ header nav .sub-menu-list .sub-menu-list-item {
   border-bottom: 1px solid #e8e8e8; 
 }
 
-header nav .sub-menu-list .sub-menu-list-item a {
+header nav .sub-menu-item .sub-menu-list .sub-menu-list-item a {
   font-size: 25px;
   line-height: 1.8;
   font-weight: 300;
