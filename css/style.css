@@ -28,7 +28,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: 'BebasNeue';
+  /*font-family: 'BebasNeue';*/
   overflow-x: hidden;
 }
 main {
@@ -196,11 +196,11 @@ p {
 }
 
 .btn a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
   width: 200px;
-  line-height: 41px;
+  height: 43px;
   font-size: 30px;
   border: 1px solid #000000;
 }

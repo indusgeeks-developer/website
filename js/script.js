@@ -49,7 +49,7 @@ $(document).ready(function(){
           iphone = ua.indexOf('IPHONE')>-1 ;
         return   ipad || ipod || iphone ;
     }
-})
+});
 
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 120) {
