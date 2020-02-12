@@ -69,5 +69,62 @@ $(document).ready(function(){
 		fade: true,
 		fadeSpeed: 1000	
 	});
+
+	//particles.js
+	img_src = [
+		'img/particle-assets/tri_red.png',
+		'img/particle-assets/sq_green.png',
+		'img/particle-assets/rect_yellow.png',
+		'img/particle-assets/line_purple.png',
+		'img/particle-assets/diag_cyan.png',
+		'img/particle-assets/circ_teal.png',
+		'img/particle-assets/arc_blue.png',
+		'img/particle-assets/circ_yellow.png',
+		'img/particle-assets/diag_cyan.png'
+	];
+
+	// Name images included
+	image_type = img_src.map(function(cuurentEl, index){ 
+		console.log("image"+index);
+		return "image" + index;
+	});
+
+	// Configure particles-js
+	particlesJS('particles-js',
+	  {
+	    "particles": {
+	      "number": {
+	        "value": img_src.length, // No of images
+	        "density": {
+	          "enable": true,
+	          "value_area": 1200 // Specify area (Lesser is greater density)
+	        }
+	      },
+	      "shape": {
+	        "type":  image_type
+	      },
+	      "opacity": {
+	        "value": 0.9
+	      },
+	      "size": {
+	      	"width": 5,
+	      	"height": 5
+	      },
+	      "move": {
+	        "enable": true,
+	        "speed": 1,   // Speed of particle motion
+	        "out_mode": "out"
+	      }
+	    },
+	    "interactivity": {
+	      "detect_on": "canvas",
+	      "events": {	        
+	        "resize": true
+	      }
+	    },
+	    "retina_detect": true
+	  }
+	);
+
 	
 });

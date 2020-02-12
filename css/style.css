@@ -31,6 +31,18 @@ body {
   font-family: 'BebasNeue';
   overflow-x: hidden;
 }
+main {
+  position: relative;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2;
+}
 
 img {
   max-width: 100%;
@@ -1746,17 +1758,26 @@ footer .footer-left, footer .footer-right {
   flex: 100%;
 }
 
-footer .footer-left .footer-col:first-child {
-  display: none;
-}
-
 footer .footer-left {
   padding: 0 0 0 20px;
 }
 
 footer .footer-left .footer-col {
   flex: 1 1 0;
-  padding: 60px 0;
+  padding: 60px 0 0;
+}
+
+footer .footer-left .footer-list:nth-child(1) {
+  margin-bottom: 40px;
+}
+
+footer .footer-left .footer-list .list-item a {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  color: #ffffff;
 }
 
 footer .footer-left .title {
@@ -1892,24 +1913,13 @@ footer .copyright ul li a {
     display: flex;
     flex: 60%;
   }
-  footer .footer-left .footer-col:nth-child(n) {
+  footer .footer-left .footer-col {
     width: 50%;
-    padding-right: 10px;
+    padding: 60px 10px;
     display: block;
   }
   footer .footer-left .hide-item {
     display: none;
-  }
-  footer .footer-left .footer-list {
-    margin-bottom: 20px;
-  }
-  footer .footer-left .footer-list .list-item a {
-    font-size: 24px;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    color: #ffffff;
   }
   footer .footer-right {
     flex: 40%;
