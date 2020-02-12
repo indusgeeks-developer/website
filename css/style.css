@@ -255,8 +255,13 @@ select {
   color: #c6c6c6;
 }
 
+select::-ms-expand {
+  display: none;
+}
+
 textarea {
   min-height: 150px;
+  overflow: auto; 
 }
 
 :-ms-input-placeholder {
