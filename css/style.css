@@ -16,6 +16,8 @@
   font-weight: 300;
 } 
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -29,6 +31,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'BebasNeue';
+  width: 100vw;
+  max-width: 100vw;
   overflow-x: hidden;
 }
 main {
@@ -335,7 +339,7 @@ header #nav-check, header nav .dropdown #drop-check, header nav .sub-menu {
 }
 
 header nav .menu .menu-item a, header nav .toggle {
-  font-size: 25px;
+  font-size: 26px;
   font-weight: 300;
 }
 
@@ -556,6 +560,10 @@ Sections
   line-height: 1.5;
   word-spacing: 2px;
   margin-bottom: 0;
+
+  font-family: 'Roboto', sans-serif;
+  color: #666565;
+  text-transform: uppercase;
 }
 
 .section-description:before {
@@ -577,7 +585,14 @@ Sections
     font-size: 70px;
   }
   .section-description, .description {
-    font-size: 25px;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .section-title {
+    width: 100%;
+    margin: 0px !important;
   }
 }
 
@@ -642,6 +657,19 @@ Hero
   width: 100%;
   margin: 0 auto;
   padding-top: 126px;
+}
+
+.hero .slider-hero{
+  padding-top: 160px;
+  max-width: 1280px;
+}
+
+.hero .slider-hero:focus{
+  outline: 0;
+}
+
+.hero .slider-hero .slide:focus{
+  outline: 0;
 }
 
 .hero .slide .slide-container {
@@ -727,11 +755,24 @@ Hero
 }
 
 .hero .slide .slide-content .bottom .slide-btn {
-  display: inline-block;
-  font-size: 18px;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
   color: #ffffff;
-  padding: 5.5px 70.9px;
   border: 1px solid #ffffff;
+
+  padding: 16px 70.9px 11px 70.9px;
+  
+  width: 80%;
+  max-width: 366px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  font-size: 28px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero .slick-dots {
@@ -806,6 +847,11 @@ Hero
   display: inline-block;
   text-align: center;
   padding: 5px 0;
+  box-shadow: 0px 0px 8px #DDDBCF;
+}
+
+.hero .scroll-to-explore{
+  height: 275px;
 }
 
 @media only screen and (min-width: 469px) {
@@ -936,6 +982,36 @@ Hero
   z-index: 999;
 }
 
+
+@media only screen and (max-width: 992px) {
+  .hero .slider-hero{
+    padding-top: 110px;
+    width: 100%;
+  }
+
+  .hero .slider-hero .slide-container{
+    margin: 0px;
+  }
+
+  .hero .slider-hero .slick-dots{
+      top: 18px;
+      bottom: 0px;
+  }
+
+  .hero .scroll-to-explore{
+    margin-top: 30px;
+    height: 100px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .hero .bottom .slide-btn{
+    font-size: 20px !important;
+   text-align: center !important;
+    padding: 16px 16px 11px 16px !important;
+   }
+}
+
 /*==========================
 Industry
 ==========================*/
@@ -944,8 +1020,34 @@ Industry
   position: relative;
 }
 
+.industry .main-container{
+   width: 100vw;
+}
+
+.industry .section-header{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0px auto;
+}
+
+.industry .first-separator{
+  right: 0px;
+  height: 188px;
+
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: flex-end;
+}
+
+.industry .first-separator img{
+  height: 50px;
+  width: auto;
+}
+
 .industry .container {
   width: 80%;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -1119,16 +1221,46 @@ Industry
   }
 }
 
+@media only screen and (max-width: 992px) {
+  .industry{
+    padding-top: 30px;
+  }
+
+  .industry .main-container .section-header{
+    width: 80%;
+    margin:0px auto;
+  }
+  .industry .main-container .section-header .section-title{
+    width: 80%;
+    margin:0px auto;
+  }
+  .industry .main-container  .first-separator{
+    height: 75px;
+  }
+
+  .industry .industry-content .section-description {
+    width: 75%;
+  }
+
+}
+
 /*==========================
 Platforms Section
 ==========================*/
 .platforms {
-  padding: 100px 0 50px;
+  padding: 112px 0 50px;
   position: relative;
+}
+
+.main-container{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0px auto;
 }
 
 .platforms .section-description {
   width: 80%;
+  
 }
 
 .platforms .section-description:nth-of-type(1):before {
@@ -1168,7 +1300,7 @@ Platforms Section
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  margin: 0 3% 10%;
+  margin: 0 3% 15%;
 }
 
 .platforms .platforms-content .learning .btn, .init .init-video {
@@ -1213,7 +1345,7 @@ Platforms Section
   }
   .platforms .platforms-content .learning {
     flex-direction: row;
-    margin: 0 0 15% 0;
+    margin: 0 0 27.5% 0;
   }
   .platforms .platforms-content .learning .btn {
     margin-right: 30px;
@@ -1244,17 +1376,52 @@ Platforms Section
   }
 }
 
+@media only screen and (max-width: 992px) {   
+  .platforms .main-container .section-header{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    max-width: 75%;
+    margin: 0px auto;
+  }
+
+  .platforms .main-container .section-header .cerulean-hr{
+    right: 0px !important;
+  }
+
+  .platforms .platforms-content .learning{
+    margin-bottom: 50px;
+  }
+}
+
 /*==========================
 Init Section
 ==========================*/
 .init {
-  padding: 50px 0;
+  padding: 92px 0 50px 0;
   position: relative;
 }
+
+.init .main-container{
+  width: 100%;
+  max-width: 1280px;
+  margin: 0px auto;
+}
+
 
 .init .flex-container {
   align-items: center;
 }
+
+.init .init-content{
+  padding-left: 80px !important;
+}
+
+.init .init-content .section-description{
+  width: 100%;
+}
+
 
 .init .init-video {
   text-align: center;
@@ -1278,7 +1445,7 @@ Init Section
 }
 
 .init .btn {
-  margin: 50px 0;
+  margin: 50px 0 0 0;  
 }
 
 .init .btn a {
@@ -1286,7 +1453,7 @@ Init Section
 }
 
 .init .init-framework {
-  margin: 3% 1% 1% 1%;
+  margin: 180px 1% 1% 1%;
 }
 
 .init .init-framework .box {
@@ -1381,18 +1548,37 @@ Init Section
     height: 345px;
   }
 }
+@media only screen and (max-width: 992px) {  
+  .init .init-content{
+    width: 50%;
+    padding-bottom: 36px;
+    padding-right: 24px;
+  }
+
+  .init .init-framework{
+    margin-top: 50px;
+  }
+}
 
 /*==========================
 Testimonials Section
 ==========================*/
 .testimonials {
-  padding: 50px 0;
+  padding: 135px 0 50px 0;
   position: relative;
 }
+
+.testimonials .main-container{
+  width: 100%;
+  max-width: 1280px;
+  margin:0px auto;
+}
+
 
 .testimonials .flex-inner {
   margin: 0 0 10%;
 }
+
 
 .testimonials .section-header .section-description {
   width: 60%;
@@ -1406,7 +1592,7 @@ Testimonials Section
   position: relative;
   width: 250px;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
 }
 
 .testimonials .slide-container {
@@ -1500,7 +1686,7 @@ Testimonials Section
 
 @media only screen and (min-width: 901px) {
  .testimonials .client-testimonials {
-    width: 670px;
+    width: 700px;
   }
   .testimonials .slide-container .slide-content {
     top: 0;
@@ -1553,22 +1739,78 @@ Testimonials Section
   }
 }
 
+@media only screen and (max-width: 992px) {  
+  .testimonials{
+    padding-top: 50px;
+  }
+
+  .testimonials .main-container{
+    width: 75%;
+    margin: 0px auto;
+  }
+
+  .testimonials .client-testimonials{
+      margin-left: 0px;
+      display: block;
+      width: 100%;
+      max-width: 100%;
+  }
+
+
+  .testimonials .slide-container{
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .testimonials .slide-container .slide-img{
+    min-width: 25%;
+  }
+
+  .testimonials .slide-container .slide-content{
+    width: 70%;
+  }
+
+}
+
+
+@media only screen and (max-width: 568px) {
+  .testimonials .slide-container{
+    flex-direction: column !important;
+    justify-content: center;
+  }
+
+  .testimonials .slide-container .slide-img img{
+    margin: 0px auto;
+  }
+
+  .testimonials .slide-container .slide-content{
+    width: 100%;
+  }
+}
+
 
 /*==========================
 Clients Section
 ==========================*/
 .clients {
-  padding: 50px 0;
+  padding: 194px 0 50px 0;
   position: relative;
 }
 
+.clients .main-container{
+  width: 100%;
+  max-width: 1280px;
+  margin:0px auto;
+}
+
 .clients .section-title {
-  padding-left: 20%;
+  padding-left: 0%;
 }
 
 .clients .section-title:after {
   top: 60%;
-  left: 12%;
+  left: 0%;
   width: 40%;
   height: 250%;
   background: url(../img/dots_pattern_grey.png) repeat;
@@ -1601,7 +1843,7 @@ Clients Section
 }
 
 .clients .client-btn {
-  margin: 150px 0 0;
+  margin: 128px 0 0;
 }
 
 .clients .client-btn span {
@@ -1663,17 +1905,17 @@ Clients Section
   .clients .box {
     position: relative;
     flex-wrap: nowrap;
-    left: -20%;
+    left: 0%;
   }
   .clients .box .box-img:nth-child(n) {
     margin: 4% 3%;
   }
   .clients .box:nth-child(2) {
-    left: -7%;
+    left: 7%;
   }
 
   .clients .box:nth-child(3) {
-    left: 6%;
+    left: 14%;
   }
 
   .clients .box:nth-child(4) {
@@ -1686,12 +1928,36 @@ Clients Section
     width: 70%;
   }
   .clients .box .box-img:nth-child(n) {
-    margin: 3% 8%;
+    margin: 3% 15% 3% 0;
   }
 }
 
 @media only screen and (min-width: 1201px) {
-  
+  .clients .section-title:after {
+    left: 0%;
+    width: 12%;
+  }
+
+  .clients .client_logos {
+    width: 90%;
+    max-width: 1280px;
+    margin: 0px auto;
+  }
+}
+
+@media only screen and (max-width: 992px) {  
+  .clients{
+    padding-top: 50px;
+  }
+
+  .clients .main-container{
+   width: 75%;
+    margin: 0px auto;
+  }
+
+  .clients .client-btn{
+    margin: 80px auto 50px auto;
+  }
 }
 
 
@@ -1755,6 +2021,21 @@ Awards Section
 @media only screen and (min-width: 682px) and (max-width: 1097px) {
   .awards .box .box-content {
     margin: 1%;
+  }
+}
+
+@media only screen and (max-width: 992px) {  
+  .awards{
+    padding-top: 50px;
+  }
+
+  .awards .main-container{
+   width: 75%;
+    margin: 0px auto;
+  }
+
+  .clients .client-btn{
+    margin: 80px auto 50px auto;
   }
 }
 
