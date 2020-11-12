@@ -1520,16 +1520,21 @@ Init Section
 }
 
 
-.init .cerulean-hr::before{
+.init .init-video.cerulean-hr::before{
+  content: '';
   position: absolute;
   top: 24px;
-  transform: translateX(-150%);
+  transform: translateX(-50%);
   height: 1px;
   width: 100%;
 }
 
 .init .init-content{
   margin-left: 0px !important;
+}
+
+.init .init-content .section-title:before{
+  transform: translateX(-4%);
 }
 
 .init .init-content .section-title {
