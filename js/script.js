@@ -104,82 +104,82 @@ $(document).ready(function(){
 	});
 
 	//particles.js
-	img_src = [
-		'img/particle-assets/tri_red.png',
-		'img/particle-assets/sq_green.png',
-		'img/particle-assets/rect_yellow.png',
-		'img/particle-assets/line_purple.png',
-		'img/particle-assets/diag_cyan.png',
-		'img/particle-assets/circ_teal.png',
-		'img/particle-assets/arc_blue.png',
-		'img/particle-assets/circ_yellow.png',
-		'img/particle-assets/diag_cyan.png'
-	];
+	// img_src = [
+	// 	'img/particle-assets/tri_red.png',
+	// 	'img/particle-assets/sq_green.png',
+	// 	'img/particle-assets/rect_yellow.png',
+	// 	'img/particle-assets/line_purple.png',
+	// 	'img/particle-assets/diag_cyan.png',
+	// 	'img/particle-assets/circ_teal.png',
+	// 	'img/particle-assets/arc_blue.png',
+	// 	'img/particle-assets/circ_yellow.png',
+	// 	'img/particle-assets/diag_cyan.png'
+	// ];
 
 	// Name images included
-	image_type = img_src.map(function(cuurentEl, index){ 
-		console.log("image"+index);
-		return "image" + index;
-	});
+	// image_type = img_src.map(function(cuurentEl, index){ 
+	// 	console.log("image"+index);
+	// 	return "image" + index;
+	// });
 
-	particlesJS('particles-js',
-	  {
-	    "particles": {
-	      "number": {
-	        "value": img_src.length, // No of images
-	        "density": {
-	          "enable": true,
-	          "value_area": 700 // Specify area (Lesser is greater density)
-	        }
-	      },
-	      "color": {
-	        "value": "#5affd4"
-	      },
-	      "shape": {
-	        "type":  image_type, // Add images to particle-js
-	        "stroke": {
-	          "width": 0,
-	        },
-	        "polygon": {
-	          "nb_sides": 4
-	        }
-	      },
-	      "opacity": {
-	        "value": 0.9, // Adjust opactiy
-	        "random": false,
-	        "anim": {
-	          "enable": false,
-	        }
-	      },
-	      "size": {
-	      	"value": 20,
-	        "random": false,
-	        "anim": {
-	          "enable": false,	         
-	        }
-	      },
-	      "line_linked": {
-	        "enable": false,
-	        "distance": 200,
-	        "color": "#ffffff",
-	        "opacity": 1,
-	        "width": 2
-	      },
-	      "move": {
-	        "enable": true,
-	        "speed": 0.5,   // Speed of particle motion
-	        "direction": "none",
-	        "random": true,
-	        "straight": false,
-	        "bounce": false,
-	        "attract": {
-	          "enable": false,
-	          "rotateX": 600,
-	          "rotateY": 1200
-	        }
-	      }
-	    },
-	    "retina_detect": true
-	  }
-	);
+	// particlesJS('particles-js',
+	//   {
+	//     "particles": {
+	//       "number": {
+	//         "value": img_src.length, // No of images
+	//         "density": {
+	//           "enable": true,
+	//           "value_area": 700 // Specify area (Lesser is greater density)
+	//         }
+	//       },
+	//       "color": {
+	//         "value": "#5affd4"
+	//       },
+	//       "shape": {
+	//         "type":  image_type, // Add images to particle-js
+	//         "stroke": {
+	//           "width": 0,
+	//         },
+	//         "polygon": {
+	//           "nb_sides": 4
+	//         }
+	//       },
+	//       "opacity": {
+	//         "value": 0.9, // Adjust opactiy
+	//         "random": false,
+	//         "anim": {
+	//           "enable": false,
+	//         }
+	//       },
+	//       "size": {
+	//       	"value": 20,
+	//         "random": false,
+	//         "anim": {
+	//           "enable": false,	         
+	//         }
+	//       },
+	//       "line_linked": {
+	//         "enable": false,
+	//         "distance": 200,
+	//         "color": "#ffffff",
+	//         "opacity": 1,
+	//         "width": 2
+	//       },
+	//       "move": {
+	//         "enable": true,
+	//         "speed": 0.5,   // Speed of particle motion
+	//         "direction": "none",
+	//         "random": true,
+	//         "straight": false,
+	//         "bounce": false,
+	//         "attract": {
+	//           "enable": false,
+	//           "rotateX": 600,
+	//           "rotateY": 1200
+	//         }
+	//       }
+	//     },
+	//     "retina_detect": true
+	//   }
+	// );
 });

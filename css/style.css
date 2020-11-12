@@ -78,7 +78,8 @@ p {
 }
 
 .main-container{
-  width: 80%;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -1360,7 +1361,7 @@ Platforms Section
 }
 
 .platforms .section-description:nth-of-type(2) {
-  margin: 10% 0 0 auto;
+  margin: 22% 0 0 auto;
   right: 0;
   text-align: right;
 }
@@ -1511,6 +1512,28 @@ Init Section
 .init .init-video {
   text-align: center;
   z-index: 1; 
+}
+
+.init .init-video{
+  margin-right: 0px;
+  position: relative;
+}
+
+
+.init .cerulean-hr::before{
+  position: absolute;
+  top: 24px;
+  transform: translateX(-150%);
+  height: 1px;
+  width: 100%;
+}
+
+.init .init-content{
+  margin-left: 0px !important;
+}
+
+.init .init-content .section-title {
+  padding-bottom: 0px;
 }
 
 .init .video-popup {
@@ -1720,6 +1743,7 @@ Testimonials Section
 
 .testimonials .slide-container .slide-content .client-details .client-name {
   font-size: 25px;
+  color: #FFA938;
 }
 
 .testimonials .slide-container .slide-content .client-details .designation {
@@ -1928,7 +1952,14 @@ Clients Section
 }
 
 .clients .client-btn {
-  margin: 128px 0 0;
+  margin: 162px 0 0;
+  position: relative;
+}
+
+.clients .client-btn .separator_two{
+  position: absolute;
+  top: -20px;
+  transform: translateX(-35%);
 }
 
 .clients .client-btn span {
@@ -1945,7 +1976,7 @@ Clients Section
 .clients .btn-bottom a {
   width: 461px;
   max-width: 95%;
-  padding: 35.5px;
+  padding: 35.5px 35.5px 35.5px 55px;
   border: 1px solid #ffa938;
 }
 
@@ -2030,6 +2061,12 @@ Clients Section
   }
 }
 
+@media only screen and (min-width: 1321px) {
+  .clients .box .box-img:nth-child(n) {
+    margin: 5% 15% 5% 0;
+  }
+}
+
 @media only screen and (max-width: 992px) {  
   .clients{
     padding-top: 50px;
@@ -2075,7 +2112,7 @@ Awards Section
 
 .awards .box {
   flex: 1 1 0;
-  margin: 3%;
+  margin: 2.35%;
 }
 
 .awards .box .box-content {
