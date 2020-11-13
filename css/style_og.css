@@ -82,7 +82,6 @@ p {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 1rem;
-  /* border: 3px dashed red; */
 }
 
 .separator {
@@ -1098,10 +1097,6 @@ Industry
   margin: 0 auto;
 }
 
-.industry .industry-sectors{
-  padding: 0px 20px;
-}
-
 .industry .industry-sectors .box {
   position: relative;
   flex: 1 1 50%;
@@ -1521,7 +1516,6 @@ Init Section
 
 .init .init-video{
   margin-right: 0px;
-  margin-left: 0px;
   position: relative;
 }
 
@@ -1578,7 +1572,7 @@ Init Section
 .init .init-framework .box {
   flex: 1 1 29%;
   display: flex;
-  margin: 2% 0 5% 0;
+  margin: 2% 2% 5%;
   align-items: center;
   justify-content: center;
 }
@@ -1636,7 +1630,7 @@ Init Section
 
 @media only screen and (min-width: 769px) {
   .init .init-framework .box {
-    margin: 2% 0;
+    margin: 2%;
   }
   .init .box .box-content {
     width: 270px;
@@ -1666,10 +1660,6 @@ Init Section
     width: 250px;
     height: 345px;
   }
-
-  .init .init-framework .box:nth-child(1) {
-
-  }
 }
 @media only screen and (max-width: 992px) {  
   .init .init-content{
@@ -1695,14 +1685,6 @@ Testimonials Section
   width: 100%;
   max-width: 1280px;
   margin:0px auto;
-  position: relative;
-}
-
-.testimonials .main-container .testimonials-separator{
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateY(-45%);
 }
 
 
@@ -1798,7 +1780,7 @@ Testimonials Section
     left: -30%;
   }
   .testimonials .section-description:before {
-    left: -20px;
+    left: -40px;
     width: 150%;
     height: 60%;
   }
@@ -1949,19 +1931,6 @@ Clients Section
   z-index: -1;
 }
 
-.clients .section-header{
-  position: relative;
-}
-
-.clients .section-header .clients-separator{
-  display: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translateX(100%);
-}
-
-
 .clients .client_logos {
   width: 85%;
   margin: 0 auto;
@@ -2075,16 +2044,6 @@ Clients Section
   }
 }
 
-
-@media only screen and (max-width: 725px) {
-  .testimonials .client-testimonials{
-    /* margin: 0px -45px; */
-    margin-left: -40px;
-    width: 100%;
-    max-width: 100vw;
-  }
-}
-
 @media only screen and (min-width: 1025px) {
   .clients .client_logos {
     width: 70%;
@@ -2092,15 +2051,11 @@ Clients Section
   .clients .box .box-img:nth-child(n) {
     margin: 3% 15% 3% 0;
   }
-
-  .clients .section-header .clients-separator{
-    display: block;
-  }
 }
 
 @media only screen and (min-width: 1201px) {
   .clients .section-title:after {
-    left: -20px;
+    left: 0%;
     width: 12%;
   }
 
